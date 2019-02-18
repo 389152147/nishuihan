@@ -1,0 +1,334 @@
+*{margin:0;padding:0; -webkit-tap-highlight-color:transparent;}
+.profession{
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;  
+    height: 930px;
+ }
+
+.profession .d2{
+    position:absolute;
+    width:100%;
+    height:100%;   
+} 
+ /*   z-index:  80~90; */
+.d2{
+    z-index: 100;    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("http://127.0.0.1:3000/img1/fan/bg_27e54b1.jpg") no-repeat center center;
+    overflow:hidden;
+}
+.d2 .d2-1{
+    position: absolute;
+    width: 180%;
+    height: 180%;
+    top: -64px;
+    left: 31px;
+    z-index:2;
+    background: url("http://127.0.0.1:3000/img1/fan/role_c763406.png") no-repeat; 
+    background-size:contain; 
+
+}
+
+.d2 .d2-5{
+    position: absolute;
+    top: 29px;
+    left: 1379px;
+    width: 17%;
+    height: 52%;
+    background: url("http://127.0.0.1:3000/img1/fan/7f94e4.png") no-repeat;
+    background-size: contain; 
+ }
+ .d2 .d2-6{
+    position: absolute;
+    top: 33px;
+    left: 1568px;
+    width: 14%;
+    height: 86%;
+    background: url("http://127.0.0.1:3000/img1/fan/ability_08462ab.png") no-repeat;
+    background-size: contain; 
+   }
+.d2 .d2-7{
+    position: absolute;
+    top: 532px;
+    left: 1488px;
+    width: 1%;
+    z-index: 8;
+    background-size: contain; 
+   }
+   .d2 .d2-7 a{
+       float:left;
+       /* position: absolute; */
+       width: 55px;
+       height: 61px;
+       margin-bottom:2px;
+       background:#585858;
+   }
+   .d2 .d2-7 .d2-btn1{
+   background: url("http://127.0.0.1:3000/img1/fan/gender-switch-1_f6997e4.png") no-repeat;      
+   }
+   .d2 .d2-7 .d2-btn2{
+      background: url("http://127.0.0.1:3000/img1/fan/gender-switch-2_e50f18b.png") no-repeat; 
+      background-position: 0px -61px;     
+    }
+ .d2 .d2-8{ 
+    position: absolute;
+    width: 305px;
+    height: 119px;
+    bottom: 212px;
+    left: 41%;
+    z-index:2;
+    background: url("http://127.0.0.1:3000/img1/fan/drag-bg_1612ab2.png") no-repeat;
+    }
+.d2 .d2-81{ 
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        bottom: 1px;
+        left: 59%;
+        z-index:2;
+        background: url("http://127.0.0.1:3000/img1/fan/drag-video-cover_7f0e40f.png") no-repeat;
+  }
+  .d2 .d2-82{ 
+    background: url("http://127.0.0.1:3000/img1/fan/drag-bg_1612ab2.png") no-repeat;
+}
+@keyframes scaleDraw {  
+    0%{transform: scale(1);}
+    25%{transform: scale(1.2);}
+    50%{transform: scale(1);}
+    75%{transform: scale(1.2);}
+}
+.d2 .d2-83{ 
+    position: absolute;
+    width: 60px;
+    height: 50%;
+    bottom: 35px;
+    left: 0%;
+    z-index: 50 ;
+    background: url("http://127.0.0.1:3000/img1/fan/drag-btn_b7b2ce9.png") no-repeat;
+    background-size: contain;
+   -webkit-animation: scaleDraw 3s ease-in-out infinite; 
+   transition:all 3s;   
+}
+.dd{
+    left: 210px !important;
+    z-index: 3;
+}
+/* 光标 小手 */
+.d2-83:hover{cursor:pointer;}
+
+.video{
+    position: absolute;
+    width: 120px;
+    height: 50%;
+    bottom: 35px;
+    left: 0%; 
+}
+.v3{
+    position: absolute;
+    height: 82px;
+    bottom: -14px;
+    left: 167%;
+    border-radius: 69%;
+}
+.ctrl{
+    position: absolute;
+    height: 82px;
+    bottom: -19px;
+    left: 217px;
+}
+.fade{
+    position: absolute;
+    width: 120px;
+    height: 50%;
+    bottom: 35px;
+    left: 0%;   
+    opacity:0;
+}
+.in{
+    opacity:1;
+}
+/* 大视频 */
+.v1{
+    position: absolute;
+    height: 610px;
+    top: -334px;
+    left: 275%;
+    z-index: 15;
+}
+/* 大视频按钮 */
+.video-btn{
+    position: absolute;
+    left: 1142%;
+    z-index: 90 !important;
+    width: 43px;
+    height: 43px;
+    background: #000;
+    top: -333px;
+}
+  .d2-8 span{
+    width: 137px;
+    position: absolute;
+    height: 26px;
+    bottom: -28px;
+    left: 19%;
+    -webkit-animation: Draw 3s ease-in-out infinite; 
+    transition:all 3s; 
+}
+    @keyframes Draw {  
+    0%{color:#fff;}
+    25%{color:#e9ecef;}
+    50%{color:#999;}
+    75%{color:#fff;}
+}
+/* 技能 */
+/* 技能 */
+.d2-xx{
+    position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 8px;
+     z-index:1;
+     -webkit-animation: gg  3s ease-in-out infinite; 
+     transition:all 3s; 
+     display:none; 
+ }
+ .d2-xx1{display:block}
+ @keyframes  gg{  
+     4%{background:url("http://127.0.0.1:3000/img1/fan/001_bd20c77.png");background-size:100%;}
+     8%{background:url("http://127.0.0.1:3000/img1/fan/002_054a362.png");background-size:100%;}
+     12%{background:url("http://127.0.0.1:3000/img1/fan/003_4b1e969.png");background-size:100%;}
+     16%{background:url("http://127.0.0.1:3000/img1/fan/004_bbb71ca.png");background-size:100%;}
+     20%{background:url("http://127.0.0.1:3000/img1/fan/005_d3de95c.png");background-size:100%;}
+     24%{background:url("http://127.0.0.1:3000/img1/fan/006_7aa30b8.png");background-size:100%;}
+     28%{background:url("http://127.0.0.1:3000/img1/fan/007_b82d8d5.png");background-size:100%;}
+     32%{background:url("http://127.0.0.1:3000/img1/fan/008_ed14800.png");background-size:100%;}
+     36%{background:url("http://127.0.0.1:3000/img1/fan/009_3085c66.png");background-size:100%;}
+     40%{background:url("http://127.0.0.1:3000/img1/fan/010_f194c7c.png");background-size:100%;}
+     44%{background:url("http://127.0.0.1:3000/img1/fan/011_090e617.png");background-size:100%;}
+     48%{background:url("http://127.0.0.1:3000/img1/fan/012_296197e.png");background-size:100%;}
+     52%{background:url("http://127.0.0.1:3000/img1/fan/013_ebd6d95.png");background-size:100%;}
+     56%{background:url("http://127.0.0.1:3000/img1/fan/014_73c7083.png");background-size:100%;}
+     60%{background:url("http://127.0.0.1:3000/img1/fan/015_52519f5.png");background-size:100%;}
+     64%{background:url("http://127.0.0.1:3000/img1/fan/016_d23b9f7.png");background-size:100%;}
+     68%{background:url("http://127.0.0.1:3000/img1/fan/017_c76ba84.png");background-size:100%;}
+     72%{background:url("http://127.0.0.1:3000/img1/fan/018_a527efc.png");background-size:100%;}
+     76%{background:url("http://127.0.0.1:3000/img1/fan/019_e062c5d.png");background-size:100%;}
+     80%{background:url("http://127.0.0.1:3000/img1/fan/020_b7d81cd.png");background-size:100%;}
+     84%{background:url("http://127.0.0.1:3000/img1/fan/021_81046cb.png");background-size:100%;}
+     88%{background:url("http://127.0.0.1:3000/img1/fan/022_58aeb52.png");background-size:100%;}
+     92%{background:url("http://127.0.0.1:3000/img1/fan/023_7dd1499.png");background-size:100%;}
+     100%{background:url("http://127.0.0.1:3000/img1/fan/024_9e87e4f.png");background-size:100%;}
+ }
+ .d2-xx2{
+     z-index: 1;
+     position: relative;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 8px;
+     -webkit-animation: kill 3s ease-in-out infinite; 
+     transition:all 3s;  
+ }
+
+ @keyframes kill{  
+     4%{background:url("http://127.0.0.1:3000/img1/fan/000_288c201.png");background-size:100%;}
+     8%{background:url("http://127.0.0.1:3000/img1/fan/001_288c201.png");background-size:100%;}
+     12%{background:url("http://127.0.0.1:3000/img1/fan/002_588a057.png");background-size:100%;}
+     16%{background:url("http://127.0.0.1:3000/img1/fan/003_d18c660.png");background-size:100%;}
+     20%{background:url("http://127.0.0.1:3000/img1/fan/004_e8fd9f2.png");background-size:100%;}
+     24%{background:url("http://127.0.0.1:3000/img1/fan/005_8b5ec74.png");background-size:100%;}
+     28%{background:url("http://127.0.0.1:3000/img1/fan/006_703bdcb.png");background-size:100%;}
+     32%{background:url("http://127.0.0.1:3000/img1/fan/007_e645924.png");background-size:100%;}
+     36%{background:url("http://127.0.0.1:3000/img1/fan/fan/008_3cb2576.png");background-size:100%;}
+     40%{background:url("http://127.0.0.1:3000/img1/fan/009_3b46e53.png");background-size:100%;}
+     44%{background:url("http://127.0.0.1:3000/img1/fan/010_9aa6031.png");background-size:100%;}
+     48%{background:url("http://127.0.0.1:3000/img1/fan/011_c5e7ddf.png");background-size:100%;}
+     52%{background:url("http://127.0.0.1:3000/img1/fan/012_2f39dc3.png");background-size:100%;}
+     56%{background:url("http://127.0.0.1:3000/img1/fan/013_cde7da8.png");background-size:100%;}
+     60%{background:url("http://127.0.0.1:3000/img1/fan/014_07062bd.png");background-size:100%;}
+     64%{background:url("http://127.0.0.1:3000/img1/fan/015_697abd4.png");background-size:100%;}
+     68%{background:url("http://127.0.0.1:3000/img1/fan/016_855e9d8.png");background-size:100%;}
+     72%{background:url("http://127.0.0.1:3000/img1/fan/017_2aac449.png");background-size:100%;}
+     76%{background:url("http://127.0.0.1:3000/img1/fan/018_a0958c4.png");background-size:100%;}
+     80%{background:url("http://127.0.0.1:3000/img1/fan/019_574e376.png");background-size:100%;}
+     84%{background:url("http://127.0.0.1:3000/img1/020_d134c00.png");background-size:100%;}
+     88%{background:url("http://127.0.0.1:3000/img1/fan/021_97afe74.png");background-size:100%;}
+     92%{background:url("http://127.0.0.1:3000/img1/fan/022_d204053.png");background-size:100%;}
+     100%{background:url("http://127.0.0.1:3000/img1/fan/023_11fc37d.png");background-size:100%;}
+     100%{background:url("http://127.0.0.1:3000/img1/fan/024_57e16bf.png");background-size:100%;}
+ }
+ 
+/*************************** 左侧导航栏 ***************************/
+.nav img:hover{
+    -webkit-animation: skill 3s ease-in-out 1; 
+   transition:all 2s;  
+}
+.nav a:hover{
+    -webkit-animation: skill 3s ease-in-out 1; 
+   transition:all 2s;  
+}
+@keyframes skill{ 
+    10% { transform-origin: top;    transform: rotate(10deg) ;}
+   20%{ transform-origin: top;    transform: rotate(-10deg) ;}
+   30%{ transform-origin: top;    transform: rotate(5deg) ;}
+   45%{ transform-origin: top;    transform: rotate(-5deg) ;}
+   60%{ transform-origin: top;    transform: rotate(2deg) ;}
+   85%{ transform-origin: top;    transform: rotate(-2deg) ;}
+   100%{ transform-origin: top;    transform: rotate(0deg) ;}
+}
+
+.nav{
+    z-index: 998;
+    position:absolute;
+    padding-top:40px;
+    width:142px;
+    height:100%; 
+}
+.nav  img.logo{
+    margin-left:57px;
+}
+.navigator{
+    margin-left: 29px;
+    width: 176px;
+    height: 716px;
+}
+.navigator a{
+    display:block;
+    width:61px;
+    height:74px;
+    margin-left:50px;
+}
+.navigator .a1{
+    background:url("http://127.0.0.1:3000/img1/fan/nav_d01b1ca.png");
+    background-position: 0px  1px;   
+}
+.navigator .a2{
+    background:url("http://127.0.0.1:3000/img1/fan/nav_d01b1ca.png");
+    background-position: 60px  -70px;   
+}
+.navigator .a3{
+    background:url("http://127.0.0.1:3000/img1/fan/nav_d01b1ca.png");
+    background-position: 0px  -144px;   
+}
+.navigator .a4{
+    background:url("http://127.0.0.1:3000/img1/fan/nav_d01b1ca.png");
+    background-position: 0px  -218px;   
+}
+.navigator .a5{
+    background:url("http://127.0.0.1:3000/img1/fan/nav_d01b1ca.png");
+    background-position: 0px  -294px;   
+}
+.navigator .a6{
+    background:url("http://127.0.0.1:3000/img1/fan/nav_d01b1ca.png");
+    background-position: 0px  -368px;   
+}
+.navigator .a7{
+    background:url("http://127.0.0.1:3000/img1/fan/nav_d01b1ca.png");
+    background-position: 0px  -438px;   
+}
+
+

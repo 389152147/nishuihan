@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/game.css"/>    
+    <title></title>
+    <script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery-min.js"></script>
+</head>
+<body>
+<div class="pageCnt">
+    <div class="div-a">
+            <div class="a-img1"><a href="http://127.0.0.1:3000/index.html"><img src="http://127.0.0.1:3000/img1/fan/3399.png" alt=""/></a></div>
+            <div class="a-img2"><img src="http://127.0.0.1:3000/img1/fan/c3.png" alt=""/></div>
+            <div class="a-img3"><img src="http://127.0.0.1:3000/img1/fan/d8.png" alt=""/></div>
+            <div class="a-img4"><img src="http://127.0.0.1:3000/img1/fan/506.png" alt=""/></div>
+            <!-- <div class="a-img5"><img src="img1/fan/d5.png" alt=""/></div>
+            <span class="sp">鼠标滚动操作</span> -->
+            <script>
+               setInterval(function(){
+                   $('.sp').toggleClass('s')
+               },1000);
+               setInterval(function(){
+                   $('.divb-img img').toggleClass('s')
+               },1000);
+            </script>
+          <div>
+            <ul class="navName">
+                <li  class="navItem"><a href="http://127.0.0.1:3000/game.html" target="_blank"><i>首页</i></a></li>
+                <!--<li  class="navItem"><a href=""><i>简史</i></a></li>-->
+                <!--<li  class="navItem"><a href=""><i>大陆</i></a></li>-->
+                <li  class="navItem"><a href="http://127.0.0.1:3000/role1.html" target="_blank"><i>职业</i></a></li>
+                <!--<li  class="navItem"><a href=""><i>飞行</i></a></li>-->
+                <li  class="navItem"><a href="http://127.0.0.1:3000/zhandou.html" target="_blank"><i>战斗</i></a></li>
+                <!--<li  class="navItem"><a href=""><i>家园</i></a></li>-->
+                <!-- <li  class="navItem"><a href="#"><i>帮会</i></a></li>
+                <li  class="navItem"><a href="#"><i>形象</i></a></li> -->
+                <!--<li  class="navItem"><a href=""><i>生活</i></a></li>-->
+            </ul>
+          </div>
+            <div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+
+                <div class="wave">
+                    <div class="wave1">
+                        <div class="w-1"></div>
+                        <div class="w-2"></div>
+                        <div class="w-3"></div>
+                        <div class="w-4"></div>
+                        <div class="w-5"></div>
+                        <div class="w-6"></div>
+                        <div class="w-7"></div>
+                        <div class="w-8"></div>
+                        <div class="w-9"></div>
+                    </div>
+                    <div class="wave2">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave3">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave4">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave5">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave6">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <div class="div-b"><div class="divb-img"></div></div>
+    <div class="div-c"></div>
+    <script>
+       $(".div-a").click(function(){
+           $(".div-a").toggleClass('aa');
+       });
+       setInterval(function(){
+           $('.div-c').toggleClass('aa')
+       },2000);
+
+
+$(".navItem").on("click","",function(){
+    $(this).clone().replaceAll("#chosen>img")
+});
+
+
+
+    </script>
+</div>
+<div class="secret">
+     
+</div>
+
+</body>
+</html>

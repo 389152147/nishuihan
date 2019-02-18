@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zhiye</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            height:100%;
+            width:100%;
+        }
+        .zhiye{
+            width:100%;
+            height:100%;
+            position:relative;
+        }
+        .zhiye>.zhiye_bg{
+            position:absolute;
+            z-index:-10;
+        }
+        .zhiye>div{
+            float:left;
+            width:0;
+            height:0;
+        }
+        .zhiye>div:nth-child(2),.zhiye>div:last-child{
+            width:50%;
+            height:100%;
+        }
+        .zhiye_position{
+            position:relative;
+            top:20%;
+        }
+        .zhiye_box{
+            width:1486px;
+            height:600px;
+            position:absolute;
+            left:-743px;
+        }
+        .zhiye_box_title{
+            background:url("http://127.0.0.1:3000/img1/zhiye/rhombus_60812f8.png") no-repeat center center;
+            width:526px;
+            height:526px;
+            float:left;
+        }
+        .zhiye_box_title>img{
+            display:block;
+            margin:20px auto;
+        }
+        .zhiye_box_title>img:first-child{
+            margin-top:170px;
+        }
+        .zhiye_box>a{              /*改动*/
+            width:100px;
+            height:100px;
+            float:left;
+            margin:200px 70px 0 -10px;
+            transition:all 1s ease-in-out;
+        }
+        .zhiye_box>.zhiye_box_a1{
+            background:url("http://127.0.0.1:3000/img1/zhiye/role1_f5f4856.png");
+            background-size:contain;
+            
+        }
+        .zhiye_box>.zhiye_box_a2{
+            background:url("http://127.0.0.1:3000/img1/zhiye/role2_d76d54f.png");
+            background-size:contain;
+        }
+        .zhiye_box>.zhiye_box_a3{
+            background:url("http://127.0.0.1:3000/img1/zhiye/role3_0f52abf.png");
+            background-size:contain;
+        }
+        .zhiye_box>.zhiye_box_a4{
+            background:url("http://127.0.0.1:3000/img1/zhiye/role4_be2a6d1.png");
+            background-size:contain;
+            margin-left:70px;
+        }
+        .zhiye_box>.zhiye_box_a5{
+            background:url("http://127.0.0.1:3000/img1/zhiye/role5_f31b586.png");
+            background-size:contain;
+        }
+        .zhiye_box>.zhiye_box_a6{
+            background:url("http://127.0.0.1:3000/img1/zhiye/role6_146b3a6.png");
+            background-size:contain;
+            margin-right:-60px
+        }
+        .zhiye_box>.zhiye_box_a7{
+            position:absolute;
+            margin:50px 0 0 46px;
+            top: 371px;
+            left: 651px;
+            background:url("http://127.0.0.1:3000/img1/zhiye/role7_f3c2a65.png") no-repeat;
+            background-size:contain;
+        }
+        .zhiye_box>.zhiye_box_A0{
+            width:200px;
+            height:200px;
+            margin:137px 20px 0 -60px;
+        }
+        .zhiye_box>.zhiye_box_A1{
+            width:200px;
+            height:200px;
+            margin:137px 20px 0 -60px;
+        }
+        .zhiye_box>.zhiye_box_A2{
+            width:200px;
+            height:200px;
+            margin:137px 20px 0 -60px;
+        }
+        .zhiye_box>.zhiye_box_A3{
+            width:200px;
+            height:200px;
+            margin:137px 20px 0 20px;
+        }
+        .zhiye_box>.zhiye_box_A4{
+            width:200px;
+            height:200px;
+            margin:137px 20px 0 -60px;
+        }
+        .zhiye_box>.zhiye_box_A5{
+            width:200px;
+            height:200px;
+            margin:137px -60px 0 -60px;
+        }
+        .zhiye_box>.zhiye_box_A6{
+            width:200px;
+            height:200px;
+            margin:0;
+        }
+        .no{
+            opacity:0.4;
+        }
+        .active{
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="zhiye">
+        <video class="zhiye_bg" src="http://127.0.0.1:3000/img1/zhiye/fire.mp4" autoplay loop style="object-fit:contain" muted></video>
+        <div></div>
+        <div class="zhiye_position">
+            <div class="zhiye_box">
+                <a href="http://127.0.0.1:3000/role1.html" class="zhiye_box_a1" style="opacity:1">
+                </a>
+                <a href="http://127.0.0.1:3000/role2.html" class="zhiye_box_a2" style="opacity:1">
+                </a>
+                <a href="http://127.0.0.1:3000/role3.html" class="zhiye_box_a3" style="opacity:1">
+                </a>
+                <div class="zhiye_box_title">
+                    <img src="http://127.0.0.1:3000/img1/zhiye/title_457b6de.png" alt="">
+                    <img src="http://127.0.0.1:3000/img1/zhiye/h2_caae3d5.png" alt="">
+                    <img src="http://127.0.0.1:3000/img1/zhiye/line_c8ea559.png" alt="">
+                </div>
+                <a href="http://127.0.0.1:3000/role4.html" class="zhiye_box_a4" style="opacity:1">
+                </a>
+                <a href="http://127.0.0.1:3000/role5.html" class="zhiye_box_a5" style="opacity:1">
+                </a>
+                <a href="http://127.0.0.1:3000/role6.html" class="zhiye_box_a6" style="opacity:1">
+                </a>
+                <a href="http://127.0.0.1:3000/role7.html" class="zhiye_box_a7" style="opacity:1"></a>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <script>
+        var box = document.getElementsByClassName("zhiye_box")[0];
+        var boxa = box.getElementsByTagName("a");
+        console.log(boxa)
+        window.onload = function(){
+            for(var i=0;i<boxa.length;i++){
+                boxa[i].className += ` zhiye_box_A${i}`;
+            }
+        }
+        for(var i=0;i<boxa.length;i++){
+            boxa[i].onmouseover = function(){
+                for(var event of boxa){
+                    event.style.opacity = 0.4;
+                }
+                this.style.opacity = 1;
+            };
+            boxa[i].onmouseout = function(){
+                for(var event of boxa){
+                    event.style.opacity = 1;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

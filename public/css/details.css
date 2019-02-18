@@ -1,0 +1,164 @@
+body{
+    width: 100%;
+    height: 1200px;
+    margin: 0;
+    padding: 0;
+}
+.m0{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:-1;
+}
+header{
+    height: 54px;
+    background:#fff;
+    color:#333333;
+}
+#d1{
+    width:179px;
+    height:54px;
+    background:#f00;
+    font-size:12px;
+    color:#fff;
+    text-align:center;
+    line-height:54px;
+}
+header img{
+  position:relative;
+  left:900px;
+  bottom:60px;
+}
+#d2{
+    margin-left:500px;
+}
+#d2 ul li>a{
+    color:#39456c;
+}
+
+#d4{
+    width:167px;
+    height:83px;
+    background:#B4964D;
+    text-align:center;
+    line-height:83px;
+    position:relative;
+    left:400px;
+    top:100px;
+}
+#d4>a{
+    font-size:25px;
+    color:#fff;
+    text-decoration:none;
+}
+#d5{
+    width:167px;
+    height:686px;
+    background:#7A8EA9;
+    border:0px solid #fff;
+    position:relative;
+    top:100px;
+    left:400px;
+}
+#d5 ul li>a{
+    color:#fff;
+    font-size:18px;
+}
+#d5 ul{
+    position:relative;
+    top:20px;
+    left:30px;
+}
+#d5 ul>hr{
+    width:100px;
+    position:relative;
+    right:35px;
+    background:#fff;
+}
+#d5>.s0{
+    position:relative;
+    left:22px;
+    top:20px;
+}
+#d5>.s1{
+    position:relative;
+    left:22px;
+    top:30px;
+}
+#d5>.s2{
+    position:relative;
+    left:22px;
+    top:40px;
+}
+#d8 ul img{
+    position:relative;
+    left:200px;
+    top:-200px;  
+}
+#d8 span{
+    position:relative;
+    left:650px;
+    top:-260px;
+    font-size:14px;
+}
+.dropdown{width:100px;height:20px;}
+.dropdown a{
+    color:#000;
+    display:inline-block;
+}
+.dropdown>a{
+    width:100px;
+   border:0px solid #000;
+   position:relative;
+   top:25px;
+   left:20px;
+}
+.dropdown>.dropdown-menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:80px;
+    height:120px;
+    border:0px solid #ddd;
+    text-decoration:none;
+}
+.dropdown-menu li a{
+    padding:5px;
+    font-size:15px;
+    text-align:center;
+}
+.dropdown-menu li:hover{background:#ddd}
+.a0>span:first-child{
+  color:#e15339;
+  font-size:14px;
+  position:relative;
+  left:600px;
+  top:-660px;
+}
+.a0>h5{
+    color:#6d7da1;
+    font-size:22px;
+    position:relative;
+    top:-630px;
+    left:770px;
+}
+.a0 a{
+  color:#3e3a39;
+  font-size:14px;  
+  text-decoration:none;
+  position:relative;
+  left:630px;
+  top:-600px;
+}
+.a1{
+    color:#6d7da1;
+    font-size:16px;
+    position:relative;
+    left:630px;
+    top:-600px;
+}
+div.m-fbcontent img {
+    display: block;
+    margin: 0;
+    border: none;
+}

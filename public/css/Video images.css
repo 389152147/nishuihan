@@ -1,0 +1,81 @@
+.begin{
+    position:absolute;
+    width: 100%;
+    height: 100%; 
+    overflow:hidden;
+}
+/* <!-- 视频背景图 --> */
+.video-big{
+    position:absolute;
+    left: -54%;
+    width: 100%;
+    height: 2028px;
+    background:url("../img/fan/bg_33ddb76.jpg");
+    background-position: 885px 2px;
+    transform: rotate(10deg);
+    z-index: 3;
+    top: -184px;
+    overflow:hidden;
+}
+/* <!-- 雪山风景图 --> */
+.scenery{
+    position:absolute;
+    left: 41%;
+    width: 100%;
+    height: 100%;
+    background:url("../img/fan/bg_bedb98d.jpg");
+    transition: all .8s ease;
+}
+/* <!-- 雪山的幕布 --> */
+.curtain{
+    position:absolute;
+    left: 41%;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    background:rgba(0,0,0,0.6);
+    transition: all .8s ease;
+}
+/* <!-- 视频 --> */
+.video-big .v1{
+    position:relative;
+    width: 117%;
+    height: 100%;
+    top: -476px;
+    left: 958px;
+    transform: rotate(-8deg);
+}
+/* <!-- 前往观赏 --> */
+  .video-btn{
+    position:absolute;
+    width: 261px;
+    height: 177px;
+    top: 68px;
+    left: 714px;
+    background:url("../img/fan/index_z_8de7eab.png");
+    background-position: -1190px -193px;
+    transition: all .5s ease;
+    z-index:5;
+}
+/* <!-- 小字 --> */
+.video-btn .small{
+    position:absolute;
+    top: 109px;
+    left: 94px;
+    width: 106px;
+    height: 21px;
+    background:url("../img/fan/index_z_8de7eab.png");
+    background-position: -1199px -574px;
+    transition: all .5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+

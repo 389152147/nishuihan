@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img1{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+.img2{
+    position: absolute;
+    top: 0px;
+    left: 380px;
+}
+.d1{
+    width: 100%;
+    height: 80px;
+
+}
+.u1{
+    position: absolute;
+    top: 20px;
+    left:735px;
+    list-style: none;
+}
+.l1{
+    float: left;
+}
+.l1>a{
+    color: #7d90aa;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    border-right:1px solid #7d90aa;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.img3{
+    z-index: 1;
+}
+.img4{
+    margin:0 10px ;
+}
+.d2{
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    z-index: 2;
+}
+.d3{
+    position: absolute;
+}
+.d4{
+    position: absolute;
+    top: 118%;
+    left: 25%;
+    z-index: 3;
+}
+.d5{
+    color: #4f678a;
+    position: absolute;
+    top: 18px;left: 165px;
+    font-size: 55px;
+    font-weight: bold;
+    width: 230px;
+    background: #fff;
+    z-index: 5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.d6{
+    position: absolute;
+    top:150px;
+    left: 150px;
+    width: 262px;
+    font-size: 10px;
+}
+.d7{
+    text-align: right;
+}
+.s1{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+.s2{
+    margin-left: 540px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.s3{
+    margin-left: 40px;
+    background: #610000;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bolder;
+}
+#btn,#text,#pass{
+    width: 262px;
+    height: 43px;
+    margin: 15px 0 10px 0;
+    font-size: 15px;
+}
+#btn{
+    color: #fff;
+    background: #7d90aa;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*威亦添加的*/
+.d6>span{
+    display:block;
+    width:100px;
+    height:20px;
+}
+#tooltip{
+    width:283px;
+    height:50px;
+    background:rgba(0,0,0,.6);
+    border-radius:5px;
+    position:absolute;
+    left:-476px;
+    top:-17px;
+    color:white;
+    font-size:16px;
+    text-align:center;
+    line-height:300%;
+    display:none;
+}

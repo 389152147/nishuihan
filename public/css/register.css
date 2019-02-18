@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img1{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+.img2{
+    position: absolute;
+    top: 0px;
+    left: 380px;
+}
+.img3{
+    position: relative;
+    z-index: 1;
+
+    left: 0;
+    right: 0;
+    width: 100%;
+
+}
+.img4{
+    margin-left: -70px;
+    margin-top: 50px;
+}
+.img5{
+    margin-left:45px ;
+}
+.img6{
+    margin: 12px 22px 60px 22px;
+}
+.img7{
+    width: 100%;
+}
+.img8{
+    margin-left: 5px;
+
+}
+.d1{
+    width: 100%;
+    height: 80px;
+
+}
+.d2{
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    z-index: 2;
+}
+.d3{
+    position: absolute;
+}
+.d4{
+    position: absolute;
+    top: 150px;
+    left: 149px;
+    float: left;
+    width: 250px;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.d5{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+
+}
+.d6{
+    position: absolute;
+    bottom: -14rem;
+    z-index: 2;
+}
+.d7{
+    position: absolute;
+    top: 100px;
+    left: 490px;
+}
+.u1{
+    position: absolute;
+    top: 20px;
+    left:735px;
+    list-style: none;
+}
+.l1{
+    float: left;
+}
+.l1>a{
+    color: #7d90aa;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    border-right:1px solid #7d90aa;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.inp1{
+    width: 262px;
+    height: 43px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.b1{
+    width: 262px;
+    height: 43px;
+    color: #fff;
+    background: #7d90aa;
+    font-size: 20px;
+    font-weight: bold;
+}
+.s1{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.s2{
+    margin-left: 450px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.s3{
+    margin-left: 40px;
+    background: #610000;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bolder;
+}
+/*威亦添加的*/
+.d4>span{
+    display:block;
+    width:100px;
+    height:20px;
+}
+#tooltip{
+    width:400px;
+    height:50px;
+    background:rgba(0,0,0,.6);
+    border-radius:5px;
+    position:absolute;
+    left:-500px;
+    color:white;
+    font-size:16px;
+    text-align:center;
+    line-height:300%;
+    display:none;
+}

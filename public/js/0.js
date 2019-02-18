@@ -1,0 +1,91 @@
+$(function(){
+$(".ship-a").mouseenter(function(){
+    $(".video-btn").css("left","34%");
+    $(".gs").css("display","block");
+}).mouseleave(function(){
+    $(".video-btn").css("left","37%");    
+    $(".gs").css("display","none");    
+})
+$(".tup-a").mouseenter(function(){
+    $(".picture-btn").css("left","54%");
+    $(".ck").css("display","block");
+}).mouseleave(function(){
+    $(".picture-btn").css("left","51%");    
+    $(".ck").css("display","none");    
+})
+$(".v1").click(function(){
+ $(this).css("display","none");
+$(".sss").css({
+   display:"block",
+   left:"-75px",
+  });
+ $(".d1").css("display","block") 
+})
+$(" .curtain").click(function(){
+  $(".xxx").css("dispaly","block");    
+      $(".xxx").animate({
+        left:216,
+        },500,function(){
+         $(".d2").css("display","block");   
+            setTimeout(function(){
+                      $(".sss").css({
+        display:"block",
+        left:"-75px",
+       });
+      $(".d1").css("display","block")  
+     },1000)
+  })
+})
+$(".d1").click(function(){
+    $(".xxx").css({
+        display:"block",
+        left:"216px",
+       });
+     $(".d2").css("display","block") 
+})
+$(".d2").click(function(){
+    $(this).css("display","none");
+    $(".sss").css({
+       display:"block",
+       left:"-75px",
+      });
+     $(".d1").css("display","block") 
+    $(this).css("display","none");
+    $(".xxx").css({
+        left:"1995px",
+       });
+ })
+$(".ship111").click(function(){
+    $(".video").addClass("in")
+    $(".v5").css("display","block"); 
+})
+$(".video-5").click(function(){
+    $(".video").removeClass("in"); 
+    $(".v5").css("display","none"); 
+})
+$(".tup1").click(function(){
+   $(".big-picture").animate({
+    width: 807,
+     left:-227,
+     top:166,
+     width:1922,
+     height:1070
+    },1000,function(){
+        $(".picture-btn2").css("display","block"); 
+        $(".close").css("display","block"); 
+    })
+ })
+ $(".close").click(function(){
+    $(".picture-btn2").css("display","none"); 
+    $(".close").css("display","none"); 
+    $(".big-picture").animate({
+         width: 0,
+         left:256,
+         top:267,
+        },1000)
+ })
+
+
+
+
+})

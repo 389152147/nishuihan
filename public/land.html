@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/land.css"/>
+    <script src="js/land.js"></script>
+    <script src="js/axios.min.js"></script>
+</head>
+<body>
+<div class="d1">
+    <img src="http://127.0.0.1:3000/img/feng/上.jpg" class="img1" alt=""/>
+    <img src="http://127.0.0.1:3000/img/feng/logo1.png" class="img2" alt=""/>
+    <ul class="u1">
+        <li class="l1"><a href="http://127.0.0.1:3000/index.html">官网首页</a></li>
+        <li class="l1"><a href="http://127.0.0.1:3000/register.html">账号注册</a></li>
+        <li class="l1"><a href="http://127.0.0.1:3000/land.html">登陆账号</a></li>
+        <li class="l1"><a href="http://127.0.0.1:3000/Customer Service.html">客服中心</a></li>
+    </ul>
+</div>
+<div class="d3">
+    <img src="http://127.0.0.1:3000/img/feng/登陆.jpg" class="img3" alt=""/>
+    <div class="d2">
+        <img src="http://127.0.0.1:3000/img/feng/注册.png" alt=""/>
+        <div class="d5">账号登陆</div>
+        <div class="d6">
+            <input type="text" placeholder="手机/邮箱/通行证账号" id="text"/>
+            <span></span>            
+            <input type="password" placeholder="密码" id="pass"/>
+            <span id="tooltip"></span>
+            <input type="button" value="登陆" id="btn"/><br/>
+            <input type="checkbox" checked/>我同意《服务条款》和《隐私保护和个人信息利用政策》
+            <div class="d7" >忘记密码>></div>
+        </div>
+
+    </div>
+</div>
+<div class="d4">
+    <img src="http://127.0.0.1:3000/img/feng/logo2.png" class="img4" alt=""/>
+    <img src="http://127.0.0.1:3000/img/feng/logo3.png" class="img4" alt=""/>
+    <img src="http://127.0.0.1:3000/img/feng/logo4.png" class="img4" alt=""/>
+    <img src="http://127.0.0.1:3000/img/feng/logo5.png" class="img4" alt=""/>
+    <img src="http://127.0.0.1:3000/img/feng/logo6.png" class="img4" alt=""/>
+    <img src="http://127.0.0.1:3000/img/feng/logo9.png" class="img4" alt=""/>
+    <span class="s1">公司简介 - 客户服务 - 相关法律 - 网易游戏 - 联系我们 - 商务合作 - 加入我们</span><br/>
+    <span class="s2">网易公司版权所有 ©1997-2019</span> <span class="s3">点击查看家长监护工程>></span>
+</div>
+<script>
+    axios.defaults.withCredentials = true
+    $("#text").blur(function(){
+        var name = $(this);
+        verify(name,"请输入最少8位");
+        
+    });
+    console.log()
+    $("#pass").blur(function(){
+        var pass = $(this);
+        verify(pass,"请输入最少8位");
+    });
+    $("#btn").click(function(){
+        var text = "请输入最少8位";
+        var uname = $("#text").val();
+        var upass = $("#pass").val();
+        if(!$("[type=checkbox]").is(":checked")){
+            alert("请勾选服务条款")
+        };
+        $("#text").blur();
+        $("#pass").blur();
+        if(verify($("#text"),text)){
+            return
+        }else if(verify($("#pass"),text)){
+            return
+        };
+        axios.post("http://127.0.0.1:3000/getLogin",{data:{uname,upass}
+        }).then(result=>{
+            if( result.data.code == 1){           
+            location.href = "http://127.0.0.1:3000/personal.html";
+        }else{
+            $("#tooltip").css("display","block").html(`请输入正确的用户名或密码`);
+            setTimeout(function(){
+                    $("#tooltip").css("display","none")},
+                    2000
+                );
+        }
+        })
+    })
+    function verify(name,text){
+        var regname = /^[a-z0-9_]{8,12}$/i;
+        var regpwd = /^[a-z0-9]{8,12}$/i;
+        if(regname.test(name.val())){
+            name.next().html("<img src='http://127.0.0.1:3000/img/feng/ok.png'>")
+        }else{
+            name.next().html(`<img src='http://127.0.0.1:3000/img/feng/err.png'>${text}`);
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  min-width: 1200px; 
+}
+.main{
+  position: relative;
+  height:960px;
+  width:100%;
+}
+
+.bgvideo{
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+  top: -12px;
+}
+.bgvideo video{
+  height: 980px;
+}
+.logo{
+  background: url('../img/404/logo_9d3d939.png') no-repeat;
+  width: 111px;
+  height: 300px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+.wx{
+  background: url('../img/404/wx_0bbbd77.png') no-repeat;
+  width: 171px;
+  height: 145px;
+  position: absolute;
+  top: 80px;
+  left: 125px;
+}
+.light{
+  display: block;
+  background: url('../img/404/light_c091b9f.png') no-repeat;
+  width: 301px;
+  height: 207px;
+  position: absolute;
+  right: -100px;
+  top: -96px;
+}
+.word{
+  width: 927px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 630px;
+  margin-left: -463px;
+}
+.word a{
+  background-image: url('../img/404/btn_d57608b.png');
+  height: 56px;
+  width: 230px;
+  float: left;
+  font-size: 0;
+  position: relative;
+  background-position: 0 0;
+}
+.word a:nth-child(2){
+  background-position:-230px 0;
+}
+.word a:nth-child(3){
+  background-position:-460px 0;
+}
+.word a:nth-child(4){
+  background-position:-690px 0;
+}
+.word a:nth-child(1):hover{
+  background-position:0 bottom;
+  transition:all .3s;
+}
+.word a:nth-child(2):hover{
+  background-position:-230px bottom;
+  transition:all .3s;
+}
+.word a:nth-child(3):hover{
+  background-position:-460px bottom;
+  transition:all .3s;
+}
+.word a:nth-child(4):hover{
+  background-position:-690px bottom;
+  transition:all .3s;
+}
+
+

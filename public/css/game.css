@@ -1,0 +1,410 @@
+/* .pageCnt{
+    /*position: relative;
+} */
+.pageCnt .div-a{
+    position: absolute;
+    background: url("../img1/fan/57c.png") no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    z-index:4;
+    opacity: 1;
+    transition:all 0.5s;
+}
+.pageCnt .div-b{
+    position: absolute;
+    background: url("../img1/fan/75.jpg") no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    z-index:2;
+    opacity: 1;
+    transition:0.5s;
+}
+.pageCnt .div-c{
+    position: absolute;
+    background: url("../img1/fan/721.jpg") no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    z-index:3;
+    opacity: 1;
+    transition:0.5s;
+}
+.aa{
+    opacity:0 !important;
+    transition: 0.5s;
+}
+.pageCnt .a-img1{
+    position: absolute;
+    top:80px;
+    left:147px;
+}
+.pageCnt .a-img2{
+    position: absolute;
+    top:613px;
+    left:880px;
+}
+.pageCnt .a-img3{
+    position: absolute;
+    top:690px;
+    left:823px;
+}
+.pageCnt .a-img4{
+    position: absolute;
+    top:646px;
+   left:991px;
+}
+.pageCnt .a-img5{
+    position: absolute;
+    top:771px;
+    left:963px;
+}
+.pageCnt .div-a  span{
+    position: absolute;
+    top:816px;
+    left:941px;
+    color:#fff;
+    font-size:10px;
+}
+.pageCnt .s{
+    opacity:0.5;
+}
+.navName  i{
+    font-style:normal;
+    color:#998867;
+    font-size:15px;
+    font-weight:bold;
+}
+.navName{
+    position: absolute;
+    top:106px;
+    left:25px;
+    list-style:none;
+}
+.navName a{
+    text-decoration:none;
+}
+.navName li{
+    margin-top:64px;
+    }
+.navName li:first-child{
+margin-top:21px;
+}
+
+.pageCnt .div-a .line1{
+    position: absolute;
+    top: 47px;
+    left:86px;
+    width:1782px;
+    height: 1px;
+    background: #998867;
+}
+.pageCnt .div-a .line2{
+    position: absolute;
+    top: 47px;
+    bottom: 33px;
+    left: 1868px;
+    width: 1px;
+    background: #998867;
+}
+.pageCnt .div-a .line3{
+    position: absolute;
+    bottom: 32px;
+    left: 84px;
+    width:1783px;
+    height: 1px;
+    background: #998867;
+}
+.pageCnt .div-a .line4{
+    position: absolute;
+    top: 47px;
+    bottom: 33px;
+    left: 85px;
+    width: 1px;
+    background: #998867;
+}
+.pageCnt .wave{
+ position: relative;
+    width:50px;
+    height:268px;
+    background:#262522;
+    /*position: absolute;*/
+    top: 113px;
+    left: 82px;
+}
+.pageCnt .wave1{
+    /* position: absolute; */
+    position:relative;
+    top:0;
+    width:50px;
+    height:45px;
+    /* background:#26fd; */
+}
+.pageCnt .wave1 .w-1{
+    background: red;
+    position: absolute;
+    top: 1px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave1 .w-2{
+    background: red;
+    position: absolute;
+    top: 6px;
+    width: 20px;
+    height: 1px;
+}
+
+.pageCnt .wave1 .w-3{
+    background:  red;
+    position: absolute;
+    top: 11px;
+    width: 30px;
+    height: 1px;
+}
+
+.pageCnt .wave1 .w-4{
+    background:  red;
+    position: absolute;
+    top: 16px;
+    width: 40px;
+    height: 1px;
+}
+
+.pageCnt .wave1 .w-5{
+    background: red;
+    position: absolute;
+    top:21px;
+    width: 50px;
+    height: 1px;
+}
+.pageCnt .wave1 .w-6{
+    background:  red;
+    position: absolute;
+    top: 26px;
+    width: 40px;
+    height: 1px;
+}
+.pageCnt .wave1 .w-7{
+    background:  red;
+    position: absolute;
+    top: 31px;
+    width: 30px;
+    height: 1px;
+}
+.pageCnt .wave1 .w-8{
+    background: red;
+    position: absolute;
+    top: 37px;
+    width: 20px;
+    height: 1px;
+}
+.pageCnt .wave1 .w-9{
+    background:  red;
+    position: absolute;
+    top: 42px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave2,.pageCnt .wave3,.pageCnt .wave4,.pageCnt .wave5,.pageCnt .wave6{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top:45px;
+}
+
+.pageCnt .wave3{
+    top:90px;
+}
+.pageCnt .wave4{
+    top:135px;
+}
+.pageCnt .wave5{
+    top:180px;
+}
+.pageCnt .wave .v-1{
+    background: #998867;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave .v-2{
+    background:#998867;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave .v-3{
+    background: #998867;
+    position: absolute;
+    top: 10px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave .v-4{
+    background: #998867;
+    position: absolute;
+    top: 15px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave .v-5{
+    background: #998867;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 1px;
+}
+.pageCnt .wave .v-6{
+    background: #998867;
+    position: absolute;
+    top: 25px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave .v-7{
+    background: #998867;
+    position: absolute;
+    top: 30px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave .v-8{
+    background: #998867;
+    position: absolute;
+    top: 35px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave .v-9{
+    background: #998867;
+    position: absolute;
+    top: 40px;
+    width: 10px;
+    height: 1px;
+}
+.pageCnt .wave6{
+    top:226px;
+}
+.divb-img img{
+    width:14%;
+    position:relative;
+    top: 600px; 
+    left:1436px;
+
+    transition:all 3s;
+}
+/* *************************** */
+*{margin:0; padding:0;}
+.secret .div-d{
+    position: absolute;
+    background: url("../img1/fan/95.jpg") no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    z-index:4;
+}
+.secret .div-e{
+    position: absolute;
+    background: url("../img1/fan/96.png") no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    z-index:5;
+}
+.secret .div-e  img:first-child{
+    width: 299px;
+    height: 76px;
+    position: absolute;
+    top: 153px;
+     left:  168px;
+}
+.secret .div-e  img:nth-child(2){
+    width: 341px;
+    height: 165px;
+    position:relative;
+    top: 245px;
+     left:  147px;
+}
+.secret .div-e  img:last-child{
+    width: 66px;
+    height: 55px;
+    position: absolute;
+    top: 295px;
+    left: 282px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

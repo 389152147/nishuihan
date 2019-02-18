@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        /*通用*/
+        *{
+            margin:0;padding:0;
+        }
+        li{
+            list-style:none;
+        }
+        html,body{
+            height:100%;
+        }
+        body{
+            overflow:hidden;
+        }
+        .zhandou{
+            width:100%;
+            height:100%;
+        }
+         .zhandou>div{
+            width:50%;
+            height:100%;
+            float:left;
+        }
+        .zhandou .box{
+            width:0;
+            height:0;
+            position:relative;
+            top:380px;
+        }
+        /*通用*/
+        .zhandou_title{
+            background:url("http://127.0.0.1:3000/img1/zhandou/title_968fa6e.png") no-repeat center center;
+            position:absolute;
+            top:-200px;
+            left:-262px;
+            width:525px;
+            height:123px;
+         }
+         .zhandou_PVE,.zhandou_PVP{
+             position:absolute;
+             left:-570px;
+             width:548PX;
+             height:360PX;
+             transform:rotate(45deg)
+        }
+        .zhandou_PVE>div,.zhandou_PVP>div{
+            width:180px;
+            height:180px;
+            border:1px solid #adaaa9;
+            position:absolute;
+            left:181px;
+            top:0;
+            overflow:hidden;
+            transition:left 1s,top 1s;
+            opacity:0.7;
+        }
+        .zhandou_PVE>.zhandou_PVE_1{
+            left:171px;
+            top:10px;
+        }
+        .zhandou_PVE>.zhandou_PVE_2{
+            top:-10px;
+            left:191px;
+        }
+        .zhandou_PVE>span,.zhandou_PVP>span{
+            display:block;
+            color:white;
+            width:60px;
+            height:30px;
+            font-size:30px;
+            font-family: "Trajan Pro";
+            margin:75px 0 0 241px;
+            transform:rotate(-45deg);
+            text-align:center;
+            line-height:1.1em;
+            border:0;
+        }
+        .zhandou_PVE>div>img,.zhandou_PVP>div>img{
+            float:left;
+            margin:-37.5px;
+            transform:rotate(-45deg);
+            
+            display:none;
+        }
+        .zhandou_PVE>div>img:last-child,.zhandou_PVP>div>img:last-child{
+            margin: -103px 0 0 37.5px;
+        }
+
+        /* ***************************************************** */
+        .navName  i{
+    font-style:normal;
+    color:#998867;
+    font-size:15px;
+    font-weight:bold;
+}
+.navName{
+    position: absolute;
+    top:66px;
+    left:25px;
+    list-style:none;
+}
+.navName a{
+    text-decoration:none;
+}
+.navName li{
+margin-top:64px;
+}
+.zhandou  .line1{
+    position: absolute;
+    top: 47px;
+    left:86px;
+    width:1782px;
+    height: 1px;
+    background: #998867;
+}
+.zhandou  .line2{
+    position: absolute;
+    top: 47px;
+    bottom: 33px;
+    left: 1868px;
+    width: 1px;
+    background: #998867;
+}
+.zhandou   .line3{
+    position: absolute;
+    bottom: 32px;
+    left: 84px;
+    width:1783px;
+    height: 1px;
+    background: #998867;
+}
+.zhandou   .line4{
+    position: absolute;
+    top: 47px;
+    bottom: 33px;
+    left: 85px;
+    width: 1px;
+    background: #998867;
+}
+.zhandou  .wave{
+ position: absolute;
+    width:50px;
+    height:268px;
+    background:#262522;
+    /*position: absolute;*/
+    top: 113px;
+    left: 82px;
+    z-index: 12;
+}
+.zhandou  .wave1{
+    /* position: absolute; */
+    position:relative;
+    top:0;
+    width:50px;
+    height:45px;
+    z-index: 12;
+}
+.zhandou   .wave1 .w-1{
+    background: red;
+    position: absolute;
+    top: 1px;
+    width: 10px;
+    height: 1px;
+    z-index: 12;
+}
+.zhandou   .wave1 .w-2{
+    background: red;
+    position: absolute;
+    top: 6px;
+    width: 20px;
+    height: 1px;
+    z-index: 12;
+}
+
+.zhandou  .wave1 .w-3{
+    background:  red;
+    position: absolute;
+    top: 11px;
+    width: 30px;
+    height: 1px;
+    z-index: 12;
+}
+
+.zhandou   .wave1 .w-4{
+    background:  red;
+    position: absolute;
+    top: 16px;
+    width: 40px;
+    height: 1px;
+    z-index: 12;
+}
+
+.zhandou   .wave1 .w-5{
+    background: red;
+    position: absolute;
+    top:21px;
+    width: 50px;
+    height: 1px;
+}
+.zhandou  .wave1 .w-6{
+    background:  red;
+    position: absolute;
+    top: 26px;
+    width: 40px;
+    height: 1px;
+    z-index: 12;
+}
+.zhandou  .wave1 .w-7{
+    background:  red;
+    position: absolute;
+    top: 31px;
+    width: 30px;
+    height: 1px;
+    z-index: 12;
+}
+.zhandou  .wave1 .w-8{
+    background: red;
+    position: absolute;
+    top: 37px;
+    width: 20px;
+    height: 1px;
+    z-index: 12;
+}
+.zhandou   .wave1 .w-9{
+    background:  red;
+    position: absolute;
+    top: 42px;
+    width: 10px;
+    height: 1px;
+    z-index: 12;
+}
+.zhandou  .wave2,.zhandou  .wave3,.zhandou   .wave4,.zhandou   .wave5,.zhandou   .wave6{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top:45px;
+    z-index: 12;
+}
+
+.zhandou  .wave3{
+    top:90px;
+    z-index: 12;
+}
+.zhandou  .wave4{
+    top:135px;
+    z-index: 12;
+}
+.zhandou   .wave5{
+    top:180px;
+    z-index: 12;
+}
+.zhandou  .wave .v-1{
+    background: #998867;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou   .wave .v-2{
+    background:#998867;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou   .wave .v-3{
+    background: #998867;
+    position: absolute;
+    top: 10px;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou   .wave .v-4{
+    background: #998867;
+    position: absolute;
+    top: 15px;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou   .wave .v-5{
+    background: #998867;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou  .wave .v-6{
+    background: #998867;
+    position: absolute;
+    top: 25px;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou   .wave .v-7{
+    background: #998867;
+    position: absolute;
+    top: 30px;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou   .wave .v-8{
+    background: #998867;
+    position: absolute;
+    top: 35px;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou  .wave .v-9{
+    background: #998867;
+    position: absolute;
+    top: 40px;
+    width: 10px;
+    height: 1px;
+    z-index:12;
+}
+.zhandou  .wave6{
+    top:226px;
+    z-index:12;
+}
+        
+        /*PVP*/
+        .zhandou_PVP{
+            left:150px;
+        }
+        .zhandou_PVP>div{
+            left:0;
+            top:181px;
+        }
+        .zhandou_PVP>span{
+            margin:257px 0 0 60px;
+        }
+        .zhandou_PVP>.zhandou_PVP_1{
+            left: -10PX;
+            top: 190px;
+        }
+        .zhandou_PVP>.zhandou_PVP_2{
+            left: 10PX;
+            top: 170px;
+        }
+        /*PVP*/
+        .zhandou .no{
+            display:none;
+        }
+
+
+
+        .zhandou video{
+            position:absolute;
+            left: -960px;
+            top: -500px;
+            z-index:-1;
+        }
+        /*PVP*/
+        /*幕布*/
+        .zhandou .w_screen{
+            width:100%;
+            height:100%;
+            position:absolute;
+            left:100%;
+            background:#1c2124;
+        }
+        .w_control{
+            width:100%;
+            height:100%;
+            position:absolute;
+        }
+        .w_control>img{
+            float:right;
+            margin:30px;
+            transition:all 1s;
+        }
+        .w_control>img:hover{
+            transform:rotate(180deg);
+        }
+        .w_control .w_tag{
+            width:500px;
+            height:30px;
+            border-radius:50px;
+            position: absolute;
+            left: 50%;
+            bottom: 50px;
+            margin-left: -250px;
+            background:white;
+        }
+        .w_tag>div{
+            width:94px;
+            height:25px;
+            color:#998867;
+            text-align:center;
+            font-size:16px;
+            font-weight:700;
+            line-height:25px;
+            margin:3px;
+            float: left;
+            border-radius: 50px;
+        }
+        .w_tag>.active{
+            background:#998867;
+            color:white;
+        }
+        .w_screen .w_show{
+            position:absolute;
+            width:500%;
+            height:100%;
+        }
+        .w_show>div{
+            width:20%;
+            height:100%;
+            float:left;
+            position:relative;
+        }
+        .w_show_bg1{
+            background:url("http://127.0.0.1:3000/img11/zhandou/1_a3ddc69.jpg") no-repeat center center;
+            background-size:cover;
+        }
+        .w_show_bg1>img{
+            position: absolute;
+            bottom: 120px;
+            left: 10%;
+            margin-left: -212px;
+        }
+        .w_show_bg2>img{
+            position: absolute;
+            top:10%;
+            left: 50%;
+            margin-left: -212px;
+            width:381px;
+            height:121px;
+        }
+        /*幕布*/
+        .zhandou .w_screen{
+            width:100%;
+            height:100%;
+            position:absolute;
+            background:#1c2124;
+        }
+        .w_screen>div{
+            width:100%;
+            height:100%;
+            position:absolute;
+            transition:left 1s;
+            min-width:600px;
+        }
+        .w_show_bg1{
+            background:url("http://127.0.0.1:3000/img1/zhandou/mubu/1_a3ddc69.jpg") no-repeat center center;
+            background-size:cover;
+        }
+        .w_show_bg1>img{
+            position: absolute;
+            bottom: 120px;
+            left: 50%;
+            width:424px;
+            height:126px;
+            margin-left: -212px;
+        }
+
+        /* .video-wrap {
+        position: absolute;
+        width: 100%;
+        height: 1080px;
+        max-width: 1920px;
+        overflow: hidden;
+
+        } */
+        /* .video-wrap{
+            background:url(http://127.0.0.1:3000/img1/zhandou/pvpbg_5827d97.jpg) center center no-repeat 
+        } */
+        .w_show_bg2>img{
+            position: absolute;
+            top:10%;
+            left: 50%;
+            margin-left: -190.5px;
+            width:381px;
+            height:121px;
+            z-index: 1;
+        } 
+         .zhandou .w_show_bg2>video{
+            position: relative;
+            /* width:100%;height:100%; */
+            left:0;
+            top:0;
+            z-index:0;            
+        } 
+       
+        .w_show_bg4 div{
+           position: absolute;
+            background:url('http://127.0.0.1:3000/img1/zhandou/timg.jpg') no-repeat center center;
+            background-size:cover;
+             width: 1365px;
+            height: 660px;
+            left:50%;
+            margin-left:-661.5px;
+            top:206px;
+        }      
+        .w_show_bg4 img{
+            width:523px;
+            height:121px;
+            position: absolute;
+            left: 50%;
+            margin-left: -261.5px;
+            top: 80px;
+                       
+        }
+        .w_show_bg5 img{
+            position:absolute;
+            left:50%;
+            width:536px;
+            height:121px;
+            margin-left:-268px;
+            margin-top:84px;
+        }
+        .w_show_bg5 div{
+            position:absolute;
+            background:url("http://127.0.0.1:3000/img1/zhandou/mubu/coming_65b4bc9.jpg") no-repeat center center;
+            background-size:cover;
+            width: 1365px;
+            height: 660px;
+            left:50%;
+            margin-left:-661.5px;
+            top:206px;
+        }
+        .w_screen_end{
+            position:absolute;
+            right:30px;
+            top:30px;
+            transition:all .5s;
+        }
+        .w_screen_end:hover{
+            transform:rotate(180deg);
+        }
+        .w_screen_tag{
+            width:500px;
+            height:30px;
+            border-radius:50px;
+            position: absolute;
+            left: 50%;
+            bottom: 50px;
+            margin-left: -250px;
+            background:white;
+            z-index:1;
+        }
+        .w_screen_tag>li{
+            width:94px;
+            height:25px;
+            color:#998867;
+            text-align:center;
+            font-size:16px;
+            font-weight:700;
+            line-height:25px;
+            margin:3px;
+            float: left;
+            border-radius: 50px;
+        }
+        .w_screen_tag>.active{
+            display:block;
+            width:94px;
+            height:25px;
+            background:#998867;
+            color:white;
+            border-radius: 50px;
+            margin:3px;
+            margin-bottom: -30px;
+            transition:margin-left 0.5s;
+        }
+        .w_show_bg3>div{
+            width:100%;
+            height:100%;
+            position:absolute;
+            opacity:0;
+            transition:all 1s;
+        }
+        .w_show_bg3 .w_show_bg3_item1{
+            background:url("http://127.0.0.1:3000/img1/zhandou/mubu/bg1_6e6ffb2.jpg") no-repeat center center;
+        }
+        .w_show_bg3 .w_show_bg3_item2{
+            background:url("http://127.0.0.1:3000/img1/zhandou/mubu/bg2_d9aeb54.jpg") no-repeat center center;
+        }
+        .w_show_bg3 .w_show_bg3_item3{
+            background:url("http://127.0.0.1:3000/img1/zhandou/mubu/bg3_45f4d77.jpg") no-repeat center center;
+        }
+        .w_show_bg3 .w_show_bg3_item4{
+            background:url("http://127.0.0.1:3000/img1/zhandou/mubu/bg4_cd0a1b0.jpg") no-repeat center center;
+        }
+        .w_show_bg3>div>img{
+            display:block;
+            margin:300px auto 0;
+        }
+        
+        .w_show_bg3_tag{
+            width:943px;
+            height:130px;
+            position: absolute;
+            left: 50%;
+            margin-left: -471.5px;
+            top: 539px;
+            cursor:pointer;
+        }
+        .w_show_bg3_tag>img{
+            margin:2px -1px;
+        }
+        .w_show_bg3_tag>div{
+            width:234px;
+            height:123px;
+            position:absolute;
+            top:2px;
+            background:black;
+            margin-left:-1px;
+            opacity:0.5;
+            transition:all 1s;
+        }
+        .w_show_bg3_tag>div:nth-child(4){
+            left:236px;
+        }
+        .w_show_bg3_tag>div:nth-child(6){
+            left:473px;
+        }
+        .w_show_bg3_tag>div:nth-child(8){
+            left:710px;
+        }
+        /*mubu*/
+    </style>
+</head>
+<body>
+    <div class="zhandou">
+        <div></div>
+        <div class="box">
+            <video src="http://127.0.0.1:3000/img1/zhandou/fight.mp4" autoplay muted loop style="object-fit:fill"></video>
+            <div class="zhandou_title"></div>   <!--标题-->
+            <!--PVE-->
+            <div class="zhandou_PVE">
+                <div class="zhandou_PVE_1 "></div>
+                <div class="zhandou_PVE_2 "></div>
+                <span>PVE</span>
+                <div class="no">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/1_9ae295d.jpg" alt="">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/txt1_1716975.png" alt="">
+                    
+                </div>
+                <div class="no">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/2_0473f88.jpg" alt="">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/txt2_76d1fdb.png" alt="">
+
+                </div>
+                <div class="no">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/3_465edda.jpg" alt="">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/txt3_65ac2da.png" alt="">
+                </div>
+            </div>
+            <!--PVE-->
+            <!--PVP-->
+            <div class="zhandou_PVP">
+                <div class="zhandou_PVP_1"></div>
+                <div class="zhandou_PVP_2"></div>
+                <span>PVP</span>
+                <div class="no">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/4_73ab216.jpg" alt="">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/txt4_33bd900.png" alt="">
+                </div>
+                <div class="no">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/5_2fdf4ae.jpg" alt="">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/txt5_dc6bf8b.png" alt="">
+                </div>
+            </div>
+            <!--PVP-->
+            
+        </div>
+        <div></div>
+        <!--mubu-->
+        <div class="w_screen" style="left:100%">
+            <div class="w_show_bg1">
+                <img src="http://127.0.0.1:3000/img1/zhandou/mubu/txt1_5ea3d0f.png" alt="">
+            </div>
+            <div class="w_show_bg2">
+                <img src="http://127.0.0.1:3000/img1/zhandou/mubu/txt2_85ae29d.png" alt="">
+               <video src="http://127.0.0.1:3000/img1/zhandou/pvp_1.mp4"  autoplay loop style="object-fit:fill"muted></video>                            
+            </div>
+            <div class="w_show_bg3">
+                <div class="w_show_bg3_item1" style="opacity:1">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/txt1_6688ade.png" alt="">
+                </div>
+                <div class="w_show_bg3_item2">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/txt2_0e053cd.png" alt="">                    
+                </div>
+                <div class="w_show_bg3_item3">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/txt3_26e4f9d.png" alt="">
+                </div>
+                <div class="w_show_bg3_item4">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/txt4_b423d8f.png" alt="">
+                        
+                </div>
+                <ul class="w_show_bg3_tag">
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/thumb_hover1_463d0c9.jpg" alt=""><div></div>
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/thumb_hover2_b7047a0.jpg" alt=""><div></div>
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/thumb_hover3_b3131e0.jpg" alt=""><div></div>
+                    <img src="http://127.0.0.1:3000/img1/zhandou/mubu/duochongtiaozhan/thumb_hover4_e829739.jpg" alt=""><div></div>
+                </ul>
+            </div>
+            <div class="w_show_bg4">
+                <img src="http://127.0.0.1:3000/img1/zhandou/mubu/txt4_42f1d68.png" alt="">
+                <div></div>                              
+            </div>
+            <div class="w_show_bg5">
+                <img src="http://127.0.0.1:3000/img1/zhandou/mubu/txt5_ccafd5c.png" alt="">
+                <div></div>
+            </div>
+            <img class="w_screen_end" src="http://127.0.0.1:3000/img1/zhandou/mubu/closeBtn_678102b.png" alt="">
+            <ul class="w_screen_tag">
+                <span class="active"></span>
+                <li >团队配合</li>
+                <li>极限操作</li>
+                <li>多重挑战</li>
+                <li>千人领地战</li>
+                <li>敬请期待</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="navName">
+                <li  class="navItem"><a href="http://127.0.0.1:3000/game.html"><i>首页</i></a></li>
+                <!--<li  class="navItem"><a href=""><i>简史</i></a></li>-->
+                <!--<li  class="navItem"><a href=""><i>大陆</i></a></li>-->
+                <li  class="navItem"><a href="http://127.0.0.1:3000/role1.html"><i>职业</i></a></li>
+                <!--<li  class="navItem"><a href=""><i>飞行</i></a></li>-->
+                <li  class="navItem"><a href="http://127.0.0.1:3000/zhandou.html"><i>战斗</i></a></li>
+                <!--<li  class="navItem"><a href=""><i>家园</i></a></li>-->
+                <!-- <li  class="navItem"><a href="#"><i>帮会</i></a></li>
+                <li  class="navItem"><a href="#"><i>形象</i></a></li> -->
+                <!--<li  class="navItem"><a href=""><i>生活</i></a></li>-->
+            </ul>
+          </div>
+            <div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+
+                <div class="wave">
+                    <div class="wave1">
+                        <div class="w-1"></div>
+                        <div class="w-2"></div>
+                        <div class="w-3"></div>
+                        <div class="w-4"></div>
+                        <div class="w-5"></div>
+                        <div class="w-6"></div>
+                        <div class="w-7"></div>
+                        <div class="w-8"></div>
+                        <div class="w-9"></div>
+                    </div>
+                    <div class="wave2">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave3">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave4">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave5">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                    <div class="wave6">
+                        <div class="v-1"></div>
+                        <div class="v-2"></div>
+                        <div class="v-3"></div>
+                        <div class="v-4"></div>
+                        <div class="v-5"></div>
+                        <div class="v-6"></div>
+                        <div class="v-7"></div>
+                        <div class="v-8"></div>
+                        <div class="v-9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script>
+        //zhandou
+        var pve = document.querySelectorAll(".zhandou_PVE>div");
+        var pvp = document.querySelectorAll(".zhandou_PVP>div");
+        var Img = document.querySelectorAll(".no>img");
+        var div = document.getElementsByClassName("no");
+        var WScreen = document.getElementsByClassName("w_screen")[0];
+        var data={
+            PVE:{
+                left:["0","362px","181px"],
+                top:["0","0","181px"]
+            },
+            PVP:{
+                left:["0","181px"],
+                top:["0","181px"],
+            },
+        }
+        //页面开始动画
+        window.onload = function(){
+            function move(div,data){
+                div[0].className = div[1].className = ""; 
+                setTimeout(function(){
+                    for(var i=0;i<div.length;i++){
+                        div[i].style.display = "block";
+                    };
+                },800);
+                setTimeout(function(){
+                    for(var i=2;i<div.length;i++){
+                        for(var key in data){
+                            div[i].style[key] = data[key][i-2];
+                        }
+                    }
+                },1000);
+                setTimeout(function(){
+                    for(var i=0;i<Img.length;i++){
+                        Img[i].style.display = "block";
+                    };
+                },2100)
+            };
+            move(pve,data.PVE);
+            move(pvp,data.PVP);
+        };
+        //淡入淡出
+        for(var i=0;i<div.length;i++){
+            div[i].index = i;
+            div[i].onmouseover = function(){
+                this.style.opacity = "1";
+            },
+            div[i].onmouseout = function(){
+                this.style.opacity = "0.7";
+            }
+            div[i].onclick = function(){
+                
+                WScreen.style.left = "0";
+            }
+        }
+        //zhandou
+        //mobu
+        var showD = document.querySelectorAll(".w_screen>div");
+        var showL = document.querySelectorAll(".w_screen_tag>li");
+        var bg3d = document.querySelectorAll(".w_show_bg3>div");
+        var bg3Tagd = document.querySelectorAll(".w_show_bg3_tag>div");
+        var bg3Tag = document.querySelectorAll(".w_show_bg3_tag")[0];
+        var end = document.getElementsByClassName("w_screen_end")[0];
+        
+        var n = 0;
+        //关闭
+        end.onclick = function(){
+            WScreen.style.left = 500+"%";
+        }
+        //关闭
+        //3的轮播
+        
+        bg3Tag.onmouseover = function(e){
+            for(var i=0;i<bg3Tagd.length;i++){
+                bg3Tagd[i].index = i;
+            }
+            if(e.target.nodeName == "DIV"){
+                var j = e.target.index;
+                out2(j)
+            }
+        }
+        out2();
+        function out2(j=0){
+            for(var i=0;i<bg3Tagd.length;i++){
+                bg3d[i].style.opacity = 0;
+                bg3Tagd[i].style.opacity = 0.7;
+            }
+            bg3d[j].style.opacity = 1;
+            bg3Tagd[j].style.opacity = 0;
+        }
+        //3的轮播
+        tag({out,arr:showL});
+        function tag({out,j,arr}){
+            for(var i=0;i<arr.length;i++){
+                arr[i].index = i;
+                arr[i].onclick = function(){
+                    j = n = this.index;
+                    out(j);
+                }
+            }
+        };
+        function out(){
+            var ac = document.querySelectorAll(".active")[0];
+            for(var i=0;i<showD.length;i++){
+                showD[i].style.left = (i-n)*100+"%";
+                showL[i].className = "";
+                showL[i].style.color = "#998867"
+                showL[n].style.color = "white"
+            };
+            ac.style.marginLeft = n*100+3+"px";
+        }
+        out();
+        function end(){
+            var end = document.querySelectorAll(".w_screen_end")[0];
+            end.onclick = function(){
+                var show = document.querySelectorAll(".w_screen")[0];
+                show.style.left = 100+"%";
+            }
+        }
+        //滚轮事件
+        if(window.addEventListener){window.addEventListener("DOMMouseScroll",roller,false)};
+        window.onmousewheel = document.onmousewheel = roller;   
+        
+        function roller(){
+            if(WScreen.style.left == "0px"){
+                var delta = 0;
+                delta = event.wheelDelta/120;
+                if(delta){
+                    rolling(delta);
+                }
+            }
+        }
+        function rolling(delta){
+            if(arguments.callee.timer) clearTimeout(arguments.callee.timer);
+            arguments.callee.timer = setTimeout(function(){
+                if(delta<0){        //向下滚动
+                    n++;
+                }else{
+                    n--;
+                }
+                if(n<0){
+                    n = 4
+                }else if(n>4){
+                    n = 0;
+                };
+                out(n);
+            },200)
+        }
+        //mubu
+    </script>
+</body>
+</html>

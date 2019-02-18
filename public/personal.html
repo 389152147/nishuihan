@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initila-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <title>个人中心</title>
+    <script src="js/personal.js"></script>
+    <link rel="stylesheet" href="css/personal.css"/>
+    <script src="js/axios.min.js"></script>
+</head>
+<body>
+<div class="d22">
+    <!--<img src="img/素问.png" class="img2" alt=""/>-->
+</div>
+<div class="header">
+    
+    <div class="d1">
+        <a href="http://127.0.0.1:3000/index.html">
+            <img src="http://127.0.0.1:3000/img/feng/logo1.png" alt=""/>
+        </a>        
+        <div class="d2">个人中心</div>
+        <div class="d3">PERSONAL CENTER</div>
+    </div>
+    <div class="d4">
+        <div class="d5">
+            <img src="http://127.0.0.1:3000/img/feng/头像.jpg" class="img1" alt=""/>
+            <div class="d6">亲爱的水货</div>
+            <div class="d7">去APP填写昵称吧<span class="s1">【登陆】</span><span class="s2">签到</span></div>
+            <p class="d8">我的元宝 0</p>
+            <p class="d9"><span class="s3">绑定手机</span> <span>签到赢元宝</span></p>
+        </div>
+    </div>
+</div>
+<div class="d10">
+    <div class="d20">
+        <div class="d21 wygx" data-toggle="tab" data-target="di1">
+            <img src="http://127.0.0.1:3000/img/feng/home-active.png" class="img4" alt=""/>
+            <p class="p1">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</p>
+            <span class="s4">home page</span>
+        </div>
+        <div class="d21 wygx" data-toggle="tab" data-target="di2">
+            <img src="http://127.0.0.1:3000/img/feng/profile-active.png" class="img4" alt=""/>
+            <p class="p1">个人资料</p>
+            <span class="s4">My Info</span>
+        </div>
+        <div class="d21 wygx" data-toggle="tab" data-target="di3">
+            <img src="http://127.0.0.1:3000/img/feng/message-active.png" class="img4" alt=""/>
+            <p class="p1">我的好友</p>
+            <span class="s4">My friend</span>
+        </div>
+        <div class="d21 wygx" data-toggle="tab" data-target="di4">
+            <img src="http://127.0.0.1:3000/img/feng/contact-active.png" class="img4" alt=""/>
+            <p class="p1">电话绑定</p>
+            <span class="s4">My Number</span>
+        </div>
+
+    </div>
+</div>
+<div class="d11">
+    <div class="d23" id="di1" style="z-index: 2">
+        <div class="d12 wygx" data-toggle="tab" data-target="di2" >
+            <div class="d18">个人资料</div>
+            <div class="d19">查看个人资料</div>
+        </div>
+        <div class="d13 wygx" data-toggle="tab" data-target="di2">
+            <div class="d18">我的元宝</div>
+            <div class="d19">元宝简介</div>
+            <div class="d19">元宝任务</div>
+            <div class="d19">阅换记录</div>
+            <div class="d19">元宝明细</div>
+        </div>
+        <div class="d14 wygx" data-toggle="tab" data-target="di3">
+            <div class="d18">我的好友</div>
+            <div class="d19">我的好友</div>
+        </div>
+        <div class="d15 wygx" data-toggle="tab" data-target="di4">
+            <div class="d18">个人地址</div>
+            <div class="d19">编辑地址</div>
+            <div class="d19">手机号码</div>
+            <div class="d19">QQ号码</div>
+        </div>
+        <div class="d16">
+            <div class="d17">
+                在APP绑定角色，即可查看角色信息哦~请下载《遇见逆水寒》APP！
+                <img src="http://127.0.0.1:3000/img/feng/遇见.png" class="img3" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="d23" id="di2">
+        <div class="d24">
+            <div class="d25">账号：<span class="s5">18069534692@163.com</span></div>
+            <div class="d25">昵称：<span class="s5">未填写</span></div>
+            <div class="d25">性别：<span class="s5">未填写</span></div>
+            <div class="d25">年龄：<span class="s5">未填写</span></div>
+            <button class="sumbit">提交</button>
+        </div>
+        <div class="d16">
+            <div class="d17">
+                在APP绑定角色，即可查看角色信息哦~请下载《遇见逆水寒》APP！
+                <img src="http://127.0.0.1:3000/img/feng/遇见.png" class="img3" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="d23" id="di3">
+        <div class="d26">
+            <img src="http://127.0.0.1:3000/img/feng/smz.png" alt=""/>
+            <!--<span>您还没有好友</span>-->
+        </div>
+        <div class="d16">
+            <div class="d17">
+                在APP绑定角色，即可查看角色信息哦~请下载《遇见逆水寒》APP！
+                <img src="http://127.0.0.1:3000/img/feng/遇见.png" class="img3" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="d23" id="di4">
+            <div class="d26">
+                <img src="http://127.0.0.1:3000/img/feng/smz.png" alt=""/>
+                <!--<span>您还没有好友</span>-->
+            </div>
+            <div class="d16">
+                <div class="d17">
+                    在APP绑定角色，即可查看角色信息哦~请下载《遇见逆水寒》APP！
+                    <img src="http://127.0.0.1:3000/img/feng/遇见.png" class="img3" alt=""/>
+                </div>
+            </div>
+        </div>
+</div>
+<script>
+   axios.defaults.withCredentials = true
+    var tabs=document.querySelectorAll(
+            "[data-toggle=tab]"
+    );
+    for(var tab of tabs){
+        tab.onclick=function(){
+            var tab=this;
+            var id=tab.getAttribute("data-target");
+            var Id=document.getElementById(id);
+            var Id1=document.querySelector("[style]");
+            Id1.removeAttribute("style");
+            Id.style.zIndex=2;
+//            for(var i=0;i<tabs.lenght;i++){
+//                tabs[i].style.zIndex = 0;
+//            }
+//            this.style.zIndex = 2;
+        }
+    }
+    //威亦改写
+    window.onload = function(){
+        var s5 = document.getElementsByClassName("s5")[0];
+        var nic = document.getElementsByClassName("d6")[0];
+        var mid = document.getElementsByClassName("s5")[0];
+        axios.post("http://127.0.0.1:3000/loginAbj").then(result=>{
+            s5.innerHTML = `【登出】`;
+            mid.innerHTML = result.data.data[0].uname;
+        })
+    }
+</script>
+
+
+
+
+</body>
+</html>

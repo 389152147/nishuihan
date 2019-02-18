@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新人手册详情页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/detail.css">    
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    
+
+</head>
+<body>
+    <div class="g-wrap f-pr" style="min-height: 949px;">
+        <div class="g-side f-pa f-cb" style="height: 949px;">
+            <div class="g-nav f-fl">
+                <a class="u-logo f-db f-ma" href="http://127.0.0.1:3000/index.html" target="_blank">
+                    <img src="http://127.0.0.1:3000/img/xinrenshouce/del/header.png"></a>
+        <ul class="m-navwrap j-navid">
+            <li class="active" data-toggle="#a1" data-to="#d1">
+            <a class="active" href="#" ><span class="num">※※</span><span class="navunit"><span class="navunitcn">游戏介绍</span> <span class="navuniten">Game description</span> </span></a>
+            </li>            
+            <li data-toggle="#a2" data-to="#d2">
+            <a class="" href="#" ><span class="num">※※</span><span class="navunit"><span class="navunitcn">门派相关</span> <span class="navuniten">Martial</span> </span></a>
+            </li>
+            <li data-toggle="#a3"  data-to="#d3">
+            <a class="" href="#"><span class="num">※※</span><span class="navunit"><span class="navunitcn">角色相关</span> <span class="navuniten">characters</span> </span></a>
+            </li>
+            <li data-toggle="#a4"  data-to="#d4">
+            <a class="" href="#"><span class="num">※※</span><span class="navunit"><span class="navunitcn">副本一览</span> <span class="navuniten">Instance</span> </span></a>
+            </li>
+            <li data-toggle="#a5"  data-to="#d5">
+            <a class="" href="#"><span class="num">※※</span><span class="navunit"><span class="navunitcn">PVP活动</span> <span class="navuniten">PVP</span> </span></a>
+            </li>
+            <li data-toggle="#a6"  data-to="#d6">
+            <a class="" href="#"><span class="num">※※</span><span class="navunit"><span class="navunitcn">活动休闲</span> <span class="navuniten">Leisure activities</span> </span></a>
+            </li>
+        </ul>
+            </div>
+                    <div class="g-subnav f-fl" id="a1">
+                        <!-- id=1 -->
+                        <ul class="m-subnav">
+                            <li class="active">
+                                <a class="subnav">游戏前提<b class="hassub"></b></a>
+                                <div class="s-subnav" style="display:block">
+                                    <a class="sunit active" href="#" data-slide="#b1"><span>下载安装</span></a>
+                                    <a class="sunit" href="#" data-slide="#b2"><span>注册帐号</span></a>
+                                    <a class="sunit" href="#" data-slide="#b3" ><span>登录游戏</span></a>
+                                    <a class="sunit" href="#" data-slide="#b4" ><span>常见问题</span></a>                                   
+                                </div>
+                            </li>
+                            <li class="">
+                                <a class="subnav wtb" >云垂背景<b class="hassub"></b></a>
+                                <div class="s-subnav" style="display: none;">                                    
+                                    <a class="sunit"   href="http://127.0.0.1:3000/role1.html" target="_blank"><span>七大门派</span></a>
+                                    <a class="sunit" href="#" data-slide="#b5"><span>区域地图</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="g-subnav f-fl" id="a2" style="display: none" >
+                            <!-- id=2 -->
+                            <ul class="m-subnav" >
+                                <li class="active">
+                                    <a class="subnav wtb">门派技能<b class="hassub"></b></a>
+                                    <div class="s-subnav" style="display:block">
+                                        <a class="sunit active" href="#" data-slide="#b6"><span>基础技能</span></a>
+                                        <a class="sunit" href="#" data-slide="#b7"><span>进阶技能</span></a>
+                                        <a class="sunit" href="#" data-slide="#b8"><span>心法技能</span></a>
+                                        <a class="sunit" href="#" data-slide="#b9"><span>武器技能</span></a>
+                                        <a class="sunit" href="#" data-slide="#b10"><span>绝技修炼</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="g-subnav f-fl" id="a3"style="display: none" >
+                            <!-- id=3 -->
+                            <ul class="m-subnav" >
+                                <li class="active">
+                                    <a class="subnav wtb">基础成长<b class="hassub"></b></a>
+                                    <div class="s-subnav">
+                                        <a class="sunit active wtb" href="#" data-slide="#b11"><span>角色基础属性</span></a>
+                                        <a class="sunit wtb" href="#" data-slide="#b12"><span>人物境界</span></a>
+                                        <a class="sunit wtb"   href="#" data-slide="#b13"><span>转职系统</span></a>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a class="subnav wtb">多元成长<b class="hassub"></b></a>
+                                    <div class="s-subnav" style="display: none;">
+                                        <a class="sunit wtb" href="#"  data-slide="#b14"><span>铭牌</span></a>
+                                        <a class="sunit wtb" href="#"  data-slide="#b15"><span>声望</span></a>
+                                        <a class="sunit wtb" href="#"  data-slide="#b16"><span>成就</span></a>                                                           
+                                        <a class="sunit wtb" href="#"  data-slide="#b17"><span>称号</span></a>
+                                        <a class="sunit wtb" href="#"  data-slide="#b18"><span>境界</span></a>
+                                    </div
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="g-subnav f-fl" id="a4"style="display: none" >
+                    <!-- id=4 -->
+                        <ul class="m-subnav" >
+                            <li class="active">
+                                <a class="subnav wtb">江湖挑战<b class="hassub"></b></a>
+                                <div class="s-subnav">
+                                    <a class="sunit active wtb" href="#" data-slide="#b19"><span>四帝炼境</span></a>
+                                    <a class="sunit wtb" href="#" data-slide="#b20"><span>训练场</span></a>
+                                    <a class="sunit wtb"   href="#"><span>时空幻境</span></a>
+                                </div>
+                            </li>
+                            <li class="">
+                                <a class="subnav wtb">舞阳城<b class="hassub"></b></a>
+                                <div class="s-subnav" style="display: none;">
+                                    <a class="sunit wtb" href="#"><span>灵墟</span></a>
+                                    <a class="sunit wtb" href="#"><span>迷雾山谷</span></a>
+                                    <a class="sunit wtb" href="#"><span>青麟镇妖</span></a>
+                                    <a class="sunit wtb" href="#"><span>地下长城</span></a>                                    
+                                </div>
+                            </li>                                        
+                            <li class="">
+                                <a class="subnav wtb">武林风云录<b class="hassub"></b></a>
+                                <div class="s-subnav" style="display: none;">
+                                    <a class="sunit wtb" href="#"><span>地宫介绍</span></a>
+                                    <a class="sunit wtb" href="#"><span>花海沉船地宫</span></a>
+                                    <a class="sunit wtb" href="#"><span>天荒幻境地宫</span></a>                                   
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="g-subnav f-fl"id="a5"style="display: none" >
+                        <!-- id=5 -->
+                        <ul class="m-subnav" >
+                            <li class="active">
+                                <a class="subnav">小队PVP<b class="hassub"></b></a>
+                                <div class="s-subnav" style="display: block;">
+                                    <a class="sunit active" href="#" data-slide="#b21"><span>竞技场</span></a>
+                                    <a class="sunit" href="#" data-slide="#b22"><span>掠影谷战场</span></a>
+                                    <a class="sunit" href="#"><span>决战云巅</span></a>
+                                    <a class="sunit"   href="#"><span>王者对决</span></a>
+                                </div>
+                            </li>
+                            <li class="">
+                                <a class="subnav wtb">PVP玩法<b class="hassub"></b></a>
+                                <div class="s-subnav" style="display: none;">
+                                    <a class="sunit wtb" href="#"><span>玉木峰阵营战</span></a>
+                                    <a class="sunit wtb" href="#"><span>碎星屿</span></a>
+                                    <a class="sunit wtb" href="#"><span>亡命岛</span></a>
+                                    <a class="sunit wtb" href="#"><span>生死场</span></a>
+                                </div>
+                            </li>
+                            <li class="">
+                                <a class="subnav wtb">大型PVP<b class="hassub"></b></a>
+                                <div class="s-subnav" style="display: none;">
+                                    <a class="sunit wtb" href="#"><span>公会领地战</span></a>
+                                    <a class="sunit wtb" href="#"><span>岩锤点兵战场</span></a>
+                                    <a class="sunit wtb"   href="#"><span>帝国战争</span></a>
+                                    <a class="sunit wtb" href="#"><span>公会联赛</span></a>
+                                    <a class="sunit wtb"   href="#"><span>云垂武道会</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="g-subnav f-fl" style="display: none" id="a6">
+                                                <!-- id=6-->
+                                                <ul class="m-subnav" >
+                                                    <li class="active">
+                                                        <a class="subnav">任务系统<b class="hassub"></b></a>
+                                                        <div class="s-subnav" style="display:block">
+                                                            <a class="sunit active" href="#" data-slide="#b23"><span>主线剧情</span></a>
+                                                            <a class="sunit" href="#"data-slide="#b24"><span>支线任务</span></a>
+                                                            <a class="sunit" href="#"><span>历练任务</span></a>                                                           
+                                                        </div>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="subnav wtb">生活系统<b class="hassub"></b></a>
+                                                        <div class="s-subnav" style="display: none;">
+                                                            <a class="sunit" href="#"><span>生活技能</span></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="subnav wtb">任务活动<b class="hassub"></b></a>
+                                                        <div class="s-subnav" style="display: none;">
+                                                            <a class="sunit"   href="#"><span>寻灵玩法</span></a>
+                                                            <a class="sunit" href="#"><span>游历任务</span></a>                                            
+                                                            <a class="sunit" href="#"><span>工作玩法</span></a>                                                          
+                                                            <a class="sunit" href="#"><span>声望任务</span></a>                                                                                                              
+                                                        </div>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="subnav wtb">休闲活动<b class="hassub"></b></a>
+                                                        <div class="s-subnav" style="display: none;">
+                                                            <a class="sunit" href="#"><span>追风之人</span></a>
+                                                            <a class="sunit" href="#"><span>妖精园游会</span></a>
+                                                            <a class="sunit" href="#"><span>钓鱼大赛</span></a>
+                                                            
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                    </div>
+                        </div>
+                            <div>
+                <div class="g-main" id='d1'>
+                    <div class="g-content"  id="b1">
+                        <div class="m-slogen"></div>
+                        <div class="m-navpositon">
+                            <span>
+                                <a href="http://127.0.0.1:3000/index.html" >逆水寒</a></span>/<span>游戏介绍</span>/<span>游戏前提</span>/<span>下载安装</span>
+                            </div>
+                            <div class="m-content">
+                                <h1>下载安装</h1>
+                                <h2><span class="num">一</span>下载</h2>
+                
+                <p>进入<a href="#"  ><strong>&gt;&gt;《逆水寒》客户端下载页</strong></a>下载游戏客户端。</p>
+                
+                <p>我们有以下下载渠道：<strong>极速下载、HTTP下载</strong>。玩家们可以根据自己的网络情况来选择下载渠道。</p>
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img alt="1.jpg" src="http://127.0.0.1:3000/img/xinrenshouce/del/image017_S.jpg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2><span class="num">二</span>安装</h2>
+                
+                <ol>
+                    <li><span class="num">1</span>下载完成并解压后，点击pg-1.0.57.exe进行安装；
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》下载安装" height="477" src="http://127.0.0.1:3000/img/xinrenshouce/del/image021_S.jpg" width="700"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <li><span class="num">2</span>阅读《逆水寒》最终用户使用许可协议，并点击<span class="esc">我接受</span>进入下一步安装流程；
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》下载安装" height="361" src="http://127.0.0.1:3000/img/xinrenshouce/del/image023_S.jpg" width="503"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <li><span class="num">3</span>选择客户端安装路径；
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》下载安装" height="361" src="http://127.0.0.1:3000/img/xinrenshouce/del/image025_S.jpg" width="503"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                    <li><span class="num">4</span>安装完成，运行游戏。
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒游戏前提下载安装" height="365" src="http://127.0.0.1:3000/img/xinrenshouce/del/image027_S.jpg" width="508"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="登录器" src="http://127.0.0.1:3000/img/xinrenshouce/del/image029_S.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </li>
+                </ol>
+                
+                <p><strong>（资料并非最终版本，仅供当前游戏版本参考。）</strong></p>
+                            </div>
+                    </div>               
+               
+                    <div class="g-content" id="b2" style="display: none; min-height:1300px;">
+                        <div class="m-slogen"></div>
+                        <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html"  >逆水寒</a></span>/<span>游戏介绍</span>/<span>游戏前提</span>/<span>注册帐号</span></div>
+                        <div class="m-content">
+                            <h1>注册帐号</h1>
+                            <p>进入《逆水寒》官网后，左侧设置了<strong>快速帐号注册栏</strong>，<strong>用邮箱或手机号快速注册</strong>，只需要简单几步就能完成账号注册哦！</p>
+            
+            <p>&nbsp;</p>
+            
+            <table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="快速注册" src="http://127.0.0.1:3000/img/xinrenshouce/del/login.png"></td>
+                    </tr>
+                </tbody>
+            </table>           
+            <p>&nbsp;</p>
+                        </div>                        
+                    </div>
+                    <div class="g-content" id="b3" style="display: none">
+                        <div class="m-slogen"></div>
+                        <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>游戏介绍</span>/<span>游戏前提</span>/<span>登录游戏</span></div>
+                        <div class="m-content">
+                            <h1>登录游戏</h1>
+                            <h2><span class="num">一</span>登录游戏</h2>
+            
+            <h3>登录帐号与选择服务器</h3>
+            
+            <p>&nbsp;</p>
+            
+            <table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒操作相关登录游戏" height="379" src="http://127.0.0.1:3000/img/xinrenshouce/del/timg.jpg" width="700"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>输入已激活的网易通行证帐号与相对应的密码。</p>
+            
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img alt="2.jpg" src="http://127.0.0.1:3000/img/xinrenshouce/del/u=580418030,986308882&fm=26&gp=0.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>成功登录后，选择您已激活的服务器，就可以进入《逆水寒》云垂大世界，与小伙伴们畅玩啦！</p>
+            
+            <p><strong>（资料并非最终版本，仅供当前游戏版本参考。）</strong></p>
+                        </div>                       
+                    </div>
+                    <div class="g-content" id="b4" style="display: none">
+                        <div class="m-slogen"></div>
+                        <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>游戏介绍</span>/<span>游戏前提</span>/<span>常见问题</span></div>
+                        <div class="m-content">
+                            <h1>常见问题</h1>
+                            <h2><span class="num">一</span>常见问题</h2>
+            <p><strong><span class="blue">Q：逆水寒是什么类型的游戏？</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：《逆水寒》是由网易盘古开发组历时五年、耗资过亿自主研发的3DMMORPG网游。</p>
+            <h2><span class="num">二</span>游戏下载相关</h2>
+            <p><strong><span class="blue">Q：游戏下载不动了</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：您可尝试以下解决办法</p>
+            <p>1、 先尝试暂停下载，再重新开启下载。</p>
+            <p>2、 退出360安全卫士、其他杀毒软件后，重新打开下载器进行下载。</p>
+            <p>3、 若还是无法下载，可在官网下载页面查看其他下载方式</p>
+            <p>4、 其次检查你的网络环境是否有问题，尝试打开一些其它网页，检查打开是否流畅，如果不流畅，您可以向网络供应商寻求解决方法。</p>
+            <p><strong><span class="blue">Q：游戏下载其他问题</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：您可尝试以下解决办法</p>
+            <p>1、使用HTTP下载必需下载五部分客户端文件到同一目录下，无需解压，点击pg-1.0.0.exe文件安装即可，未完整下载会导致无法正常进入。</p>
+            <p>2、使用极速下载只需等待下载完成后，点击“开始安装”即可。下载过程中如果点击“暂停下载”功能，需要一段时间保存，请耐心等待。</p>
+            <p>3、如果文件校验不通过，请到论坛的建议收集发帖，会有专人负责解答您的问题。</p>
+            <p><strong><span class="blue">Q：HTTP下载方式，如果出现一下情况</span></strong></p>
+            <p><strong><span class="blue"></span></strong>出现提示pg-1.0.0.7z.001, pg-1.0.0.7z.002, pg-1.0.0.7z.003, pg-1.0.0.7z.004 文件校验错误</p>
+            <p>请采用以下步骤解决：</p>
+            <p>1. 查看pg-1.0.0.7z.001, pg-1.0.0.7z.002, pg-1.0.0.7z.003, pg-1.0.0.7z.004的真实文件名</p>
+            <p>(1) 确认显示文件后缀</p>
+            <p>a. 点击“文件夹和搜索选项</p>
+            <p>
+            </p><table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒/操作相关/新手相关/常见问题" width="274" height="263" src="https://nie.res.netease.com/nie/nieimg/images/2015/7/15/2015-07-15_617371.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p>b. 在弹出来的对话框里确认“隐藏已知文件类型的扩展名”没有勾选</p>
+            <p>
+            </p><table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒/操作相关/新手相关/常见问题" width="434" height="472" src="https://nie.res.netease.com/nie/nieimg/images/2015/7/15/2015-07-15_617381.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p>如果是勾上的，请去掉这一项的勾，然后点击确定，退出这个对话框</p>
+            <p>c. 回到游戏下载目录，如果显示的文件名如下图：</p>
+            <p>(2) 修改文件名，请手动修改4个压缩包的文件名，将最后的.7z去掉，如下图：</p>
+            <p>
+            </p><table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒/操作相关/新手相关/常见问题" width="649" height="158" src="https://nie.res.netease.com/nie/nieimg/images/2015/7/15/2015-07-15_617377.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p>
+            </p><table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒/操作相关/新手相关/常见问题" width="700" height="166" src="https://nie.res.netease.com/nie/nieimg/images/2015/7/15/2015-07-15_617385.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p><strong><span class="blue">Q：游戏更新问题</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：游戏更新出现无法更新的情况，可以使用该解决方法</p>
+            <p>到官网下载补丁文件，然后到游戏安装目录下，双击manualupdate.exe进行手动更新</p>
+            <p><strong><span class="blue">Q：进入游戏后，发现屏幕全黑、没有游戏画面、画面卡住等情况</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：</p>
+            <p>1、 可能缺少dx文件，可下载dx修复工具安装,下载地址：<a target="_blank" href="http://tianyu.163.com/download/"><strong>&gt;&gt;客户端下载地址</strong></a>，修复后重新启动游戏再试。</p>
+            <p>2、 若仍然不行，可能你的显卡驱动有问题，可使用驱动精灵，尝试更新游戏显卡。重新启动游戏再试。</p>
+            <p><span class="blue"><strong>Q：游戏登陆问题</strong></span></p>
+            <p><span class="blue"></span>A：如登陆游戏时遇到黑屏提示“找不到服务器列表”，可先尝试以管理员身份运行游戏，如果还不行，则将游戏安装到非系统盘再试。</p>
+            <p><strong><span class="blue">Q：战斗或行走有明显的网络延时</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：</p>
+            <p>1、 首先你先尝试打开一些其它网页，检查打开是否流畅，如果不流畅，您可以向网络供应商寻求解决方法。</p>
+            <p>2、 其次，可能目前游戏客户端有部分文件损坏，建议您尝试重新下载安装游戏（一定要删除之前所有游戏文件）。</p>
+            <p>3、 也可能您电脑硬件有异常，建议您可以尝试在附近网吧或者朋友的机器上登录试试，如果不卡，则断定是您的电脑有异常；建议找专业人士检查或者更新操作系统、升级硬件。</p>
+            <p>4、 另外，可能是突发的网络问题导致您出现卡机的情况，或者我们服务器出现短暂链接失败、宕机等。若出现这样的情况，游戏登录界面、官方论坛、客服专区会及时发布通知的，您可以多留意看看。 </p>
+            <p>温馨提醒：如果您是与他人共享网络，请留意局域网内是否有人使用"BT、迅雷"等下载工具。同一网络的用户下载文件会占用大量的网络带宽，将直接导致您游戏时出现卡机。</p>
+            <p><strong><span class="blue">Q：人物卡死，怎么都跑不出当前画面</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：若游戏人物卡住了，可通过点击主界面自己血条右侧的“脱离异常坐标”按钮，离开卡住的场景、回到正常场景。</p>
+            <p><span class="blue"><strong>Q：游戏客户端报错、崩溃</strong></span></p>
+            <p><span class="blue"></span>A：</p>
+            <p>1、 游戏客户端报错崩溃，首先游戏内会弹出崩溃信息，请上传您的错误信息，我们会第一时间进行检测，你可重新启动游戏，看是否还会再次崩溃。</p>
+            <p>2、 如果崩溃较为频繁，可在安装客户端目录下，点击“repairer.exe”，程序将自动进行修复工作。</p>
+            <p>3、 若修复后还是频繁的报错，建议您尝试重新下载安装游戏（一定要删除之前所有游戏文件），若仍有问题，请联系论坛管理员。</p>
+            <p>4、 建议调整游戏配置，降低画面质量，提高游戏稳定性。</p>
+            <p>
+            </p><table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒/操作相关/新手相关/常见问题" width="403" height="324" src="https://nie.res.netease.com/nie/nieimg/images/2015/7/15/2015-07-15_617391.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p>
+            </p><table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒/操作相关/新手相关/常见问题" width="604" height="460" src="https://nie.res.netease.com/nie/nieimg/images/2015/7/15/2015-07-15_617393.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p>
+            </p><table class="table-pic">
+                <tbody>
+                    <tr>
+                        <td><img alt="逆水寒/操作相关/新手相关/常见问题" width="604" height="448" src="https://nie.res.netease.com/nie/nieimg/images/2015/7/15/2015-07-15_617395.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p></p>
+            <p><span class="blue"><strong>Q：对于游戏中的各种内容，比如npc、装备、玩法活动、升级规则不了解，可以咨询谁？</strong></span></p>
+            <p><span class="blue"></span>A：请点击游戏右上角的”网易精灵“按钮，打开精灵界面，输入你的关键字，精灵会解答你的问题。</p>
+            <p><span class="blue"><strong>Q：若无法更新客户端，客户端更新速度为0。</strong></span></p>
+            <p><span class="blue"></span>A：先关闭程序，然后把安装目录下的download目录删掉，重新更新。</p>
+            <p><strong><span class="blue">Q：发现游戏字体缺损乱码的情况怎么办</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A: 请缩放窗口或者在 系统设置-&gt;视频设置-&gt;分辨率中 修改分辨率，可解决问题</p>
+            <p><strong><span class="blue">Q：点开游戏发现启动器出现在屏幕右下角，找不到开始按钮怎么办？</span></strong></p>
+            <p><strong><span class="blue"></span></strong>A：<a target="_blank" href="http://jingyan.baidu.com/article/60ccbceb2b0f6b64cab19707.html"><strong>&gt;&gt;解决办法参见</strong></a></p>
+                        </div>                       
+                    </div>
+                    <div class="g-content" id="b5" style="display: none;">
+                        <div class="m-slogen"></div>
+                        <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html">逆水寒</a></span>/<span>游戏介绍</span>/<span>云垂背景</span>/<span>区域地图</span></div>
+                        <div class="m-content">
+                            <h1>区域地图</h1>
+                            <div class="g-frame">
+                <div class="m-fbcontent">
+                    <img src="http://127.0.0.1:3000/img/xinrenshouce/del/006SADIYly1foxe3qqmzzj30go11l42u.jpg">                    
+                </div>
+            </div>
+                        </div>                                    
+                    </div>                    
+                </div>
+            
+                <div class="g-main " id="d2"  style="display: none;">
+                        <div class="g-content" id="b6">
+                            <div class="m-slogen"></div>
+                            <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html"  >逆水寒</a></span>/<span>门派相关</span>/<span>门派技能</span>/<span>基础技能</span></div>
+                            <div class="m-content">
+                                <h1>基础技能</h1>
+                                <h2><span class="num">一</span>技能整体介绍：</h2>
+                
+                <p>技能系统是职业间最明显的差异之一，各式各样的技能在给职业确定了大致定位的同时也给了玩家一定的培养自由度，通过对技能等级和对应修炼、强化、组合使用等可以培养自己专属的角色战斗能力。</p>
+                
+                <h2><span class="num">二</span>天谕中包含的技能类型</h2>
+                
+                <p>这里用技能效果对技能进行一定的分类，一般一个技能会从属于一个或者多个技能类型中，即一个伤害技能可能同时是控制技能等。</p>
+                
+                <h3>伤害类技能：</h3>
+                
+                <p>一般伤害类技能是对对象造成一定的伤害，使得受击对象损失一定的生命值；伤害技能分为物理属性伤害和法术属性伤害，二者的伤害值会受到对象物理防御和法术防御影响而减弱。</p>
+                
+                <h3>回复类技能：</h3>
+                
+                <p>回复类技能指的是使用后可以回复使用对象的生命值或法力值等，不同的回复技能作用的范围和对象数量会有些差异。</p>
+                
+                <h3>控制类技能：</h3>
+                
+                <p>部分可以对使用对象造成诸如：定身、眩晕、冰冻、减速等效果的技能一般称之为控制类技能，一般控制类技能都伴随着伤害，所以大多数的控制类技能也是伤害技能。</p>
+                
+                <h3>解控类技能：</h3>
+                
+                <p>每个职业都有至少一个可以解除自身或者队友的受控效果，这类技能主要就是用于去除受到的控制类技能的影响。驱散类技能也属于一类解控技能。</p>
+                
+                <h3>辅助增益类技能：</h3>
+                
+                <p>这一类技能主要作用是提升自身或者部分人的一些如攻击力、防御力、生命值上限等属性的主动技能。</p>
+                
+                <h3>创生类技能：</h3>
+                
+                <p>使用技能后可以创生出例如地雷、傀儡等创生物的技能。召唤类也是创生的一种。</p>
+                
+                <h3>被动技能：</h3>
+                
+                <p>不需要玩家主动释放，只要获得并加点激活即可获得对应效果的技能。</p>
+                
+                <h3>其他技能：</h3>
+                
+                <p>不严格从属于以上类型的技能，主要有切换形态、变身类等技能。</p>
+                
+                <h2><span class="num">三</span>技能学习、使用</h2>
+                
+                <p>玩家进入游戏后即可自动学会少量的基础技能，后续基础技能的学习需要玩家通过等级的提升来学习。</p>
+                
+                <p>基础技能是当等级达到可学习等级后自动学会1级技能，在技能面板中拖出到技能栏内，当技能满足技能目标需求等前置条件时即可直接按键使用。</p>
+                
+                <h2><span class="num">四</span>技能点分配和重置</h2>
+                
+                <p>&nbsp;</p>
+                
+                <table class="table-pic">
+                    <tbody>
+                        <tr>
+                            <td><img alt="逆水寒门派相关-门派技能-基础技能" height="383" src="http://127.0.0.1:3000/img/xinrenshouce/del/20180705100130578.jpg" width="700"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>随着等级提升，玩家可以获得一定的技能点数，用于技能等级的提升。</strong></p>
+                
+                <p>图中的技能点数14/252/266分别表示：当前可以继续分配使用的技能点/已经使用激活的技能点/当前等级技能点上限值。玩家可以点击技能边上的<span class="esc">+</span>与<span class="esc">-</span>进行技能等级的提升和降级，完成自己需要的技能升级后点击“保存技能配点”按钮保存。若不保存即关闭技能面板，则技能不会升级。</p>
+                
+                <p>想要换一整套技能加点方式时，点击<strong>“重置”</strong>可以消耗一定数量的对应道具重置全部技能点数，从而可以重新加点。</p>
+                
+                <p><span class="blue"><strong>（资料并非最终版本，仅供当前游戏版本参考。）</strong></span></p>
+                            </div>                           
+                        </div>
+                        <div class="g-content" id="b7" style="display: none;">
+                                <div class="m-slogen"></div>
+                                <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html"  >逆水寒</a></span>/<span>门派相关</span>/<span>门派技能</span>/<span>进阶技能</span></div>
+                                <div class="m-content">
+                                    <h1>进阶技能</h1>
+                                    <h2><span class="num">一</span>进阶技能整体介绍</h2>
+                    
+                    <p>在游戏内，进阶技能是一个相对于职业基础技能更为强大的技能系统。是玩家在PVE、PVP过程中必不可少的强力底牌和取胜的关键手段。</p>
+                    
+                    <p>由于进阶技能过于强大，能够<span class="blue">同时装备的无双技能是有限的</span>，目前游戏内最大可以装备的无双技能数量为<span class="blue">“左、右”两系各3个</span>。</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/进阶技能" height="382" src="http://127.0.0.1:3000/img/xinrenshouce/del/0b3a1c087bf40ad1c78ea7305b2c11dfa8ecceb8.jpg" width="700"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <p align="center">进阶技能面板</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2><span class="num">二</span>进阶技能学习</h2>
+                    
+                    <p>作为强力技能，进阶技能可通过以下方式习得：</p>
+                    
+                    <ul>
+                        <li>一星进阶技能：</li>
+                    </ul>
+                    
+                    <p>&nbsp; &nbsp; 左系≥14级自动习得。右系：≥18级自动习得。</p>
+                    
+                    <ul>
+                        <li>二星进阶技能：</li>
+                    </ul>
+                    
+                    <p>&nbsp; &nbsp; 左系1≥29级自动习得。右系1：≥34级自动习得。</p>
+                    
+                    <p>&nbsp; &nbsp; 左系2≥37级自动习得。右系2：≥39级自动习得。</p>
+                    
+                    <ul>
+                        <li>三星进阶技能：</li>
+                    </ul>
+                    
+                    <p>&nbsp; &nbsp; 按“K”键打开后，在三星无双技能处，直接使用20本“<strong>无双技·断章</strong>”习得。</p>
+                    
+                    <p>在游戏中可使用“Ctrl+H”键打开小精灵，通过搜索“无双技能来源”获取无双技能学习条件。</p>
+                    
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img alt="进阶技来源" src="http://127.0.0.1:3000/img/xinrenshouce/del/1a94b36eddc451dad8686c38bafd5266d1163203.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2><span class="num">三</span>两系进阶技能值增长</h2>
+                    
+                    <p>无双技能的使用和基础技能不同，使用<strong>需要消耗对应系的无双值</strong>：</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/进阶技能" height="160" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599549.jpg" width="590"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <p align="center">右为进阶技能，左为对应系的基础技能</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>一般来说，两系无双值可以经由使用对应的基础技能提升，每个基础技能描述面板内有相应的提升描述，<strong>部分职业拥有特殊的无双值增长模式</strong>（如圣堂神佑系无双是以承受伤害来增长的，流光衍光和寂灭系无双值可以经由形态切换互换）。</p>
+                    
+                    <p>无双值在进入战斗前一般是不保留的，脱离战斗一段时间后，无双值会降低到下限值（一般为0）。</p>
+                    
+                    <h2><span class="num">四</span>无双技能升级</h2>
+                    
+                    <p>无双技能的升级需要点开相应的升级面板（点击技能右下角的<span class="esc">+</span>），面板内有提示升级所需心得和心得获取途径。</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/无双技能" height="312" src="http://127.0.0.1:3000/img/xinrenshouce/del/969cbf44ad345982a720ff6f00f431adcaef8461.jpg" width="408"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <p align="center">无双技能升级面板</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>以图中使用此技能项目为例，+0.1为该途径单次完成获得的心得值，37.3为通过该途径已获得的心得值，100为通过该途径最多可获得的心得值，当心得到达100/100时，面板会发生如图变化：</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/无双技能" height="346" src="http://127.0.0.1:3000/img/xinrenshouce/del/8640bf8b87d6277f23c428c524381f30e824fc3e.jpg" width="403"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <p align="center">无双技能升级面板</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>点击升级即可提升无双技能等级。无双等级提升以及学习新的无双技能都可以提升该系无双存储上限值。</p>
+                    
+                    <h2><span class="num">五</span>无双技能悟道</h2>
+                    
+                    <p><strong>悟道系统</strong>是对原本强大的无双技能差异化修习的系统，通过无双悟道，玩家可以消耗对应的道具，进行诸如无双值消耗减少、技能效果加强、冷却时间缩短等等方向的精研，<strong>使得无双技能更为强大。</strong></p>
+                    
+                    <p>点击无双技能左上角的“铅笔图标”可以打开无双技能悟道面板：</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/无双技能" height="507" src="http://127.0.0.1:3000/img/xinrenshouce/del/8640bf8b87d6277f23c428c524381f30e824fc3e.jpg" width="700"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>悟道系统中分为<span class="blue">风林火山4个分支</span>，每个分支对应不同效果，<strong>一般而言：火强化</strong>技能的伤害、治疗量、变身持续时间等；<strong>山强化</strong>减少技能的无双值消耗；<strong>林强化</strong>可以给技能增加一些额外效果或者改变技能的部分原有效果；<strong>风强化</strong>用于减少技能的冷却时间。</p>
+                    
+                    <p><strong>无双悟道槽需要无双技能道行提升开启</strong>，面板中有无双技能道行获取的方式，当道行达到开启条件，点击开启可以开启悟道槽，消耗一定的悟道消耗材料即可对无双技能进行悟道强化。</p>
+                    
+                    <p>当玩家游戏过程中对自身的悟道不满意，可以点击重练回退悟道重新进行悟道。</p>
+                    
+                    <h2><span class="num">六</span>部分无双技能效果演示</h2>
+                    
+                    <p>在业影轮回资料片中，推出了全新门派三星无双技能，<strong><a href=""  >&gt;&gt;全新三星无双技能效果展示</a></strong>。</p>
+                    
+                    <p><strong>其他无双技能效果</strong></p>
+                    
+                    <p>雷神·千裂破：</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》进阶技能" height="277" src="http://127.0.0.1:3000/img/xinrenshouce/del/8640bf8b87d6277f23c428c524381f30e824fc3e.jpg" width="550"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>奔雷·冲：</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》进阶技能" height="269" src="http://127.0.0.1:3000/img/xinrenshouce/del/8640bf8b87d6277f23c428c524381f30e824fc3e.jpg" width="550"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>离火·剑影：</p>
+                    
+                    <p>&nbsp;</p>
+                    
+                    <table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》进阶技能" height="276" src="http://127.0.0.1:3000/img/xinrenshouce/del/8640bf8b87d6277f23c428c524381f30e824fc3e.jpg" width="550"></td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                                         
+                    <p><strong>（资料并非最终版本，仅供当前游戏版本参考。）</strong></p>
+                                </div>                                
+                            </div>
+                            <div class="g-content" id="b8"style="display: none;">
+                                <div class="m-slogen"></div>
+                                <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>门派相关</span>/<span>门派技能</span>/<span>心法技能</span></div>
+                                <div class="m-content">
+                                    <h1>心法技能</h1>
+                                    <h2><span class="num">一</span>心法技能整体介绍</h2>
+                    <p>在天谕大世界内，翅膀给玩家提供飞行能力的同时也可以用于战斗，当玩家乘上翅膀时，每个职业都会拥有一套崭新而又有继承的空战飞行技能，使玩家能在浩瀚天空中更酣畅地战斗。</p>
+                    <p>飞行技能<span class="blue">只有在乘翅膀飞行状态下</span>才可以使用，而且<span class="blue">飞行状态下，陆地技能将全部无法使用</span>。</p>
+                    <p><strong>在近地面时，只要满足技能距离前提条件，飞行技能可以作用于陆地单位，陆地技能也可以作用于飞行中的单位。</strong></p>
+                    <p>相信有飞行技能加入后，《天谕》的战斗将更加精彩！</p>
+                    <h2><span class="num">二</span>飞行技能学习</h2>
+                    <p>飞行技能的学习需要对应的飞行技能秘籍，如图所示为其中的一本：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》心法技能" width="317" height="236" src="http://127.0.0.1:3000/img/xinrenshouce/del/20180705100129646.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>在包裹中右键点击使用心法技能秘籍，即可习得对应的飞行技能。打开飞行技能面板，可以看到新的飞行技能习得。</p>
+                    <h2><span class="num">三</span>飞行技能面板</h2>
+                    <p><strong>飞行技能面板中主要分为3块：</strong><span class="blue">主动技能</span>、<span class="blue">被动技能</span>和<span class="blue">主动技能装备栏</span>。</p>
+                    <p>目前版本的飞行技能中暂时没有开启飞行技能中的被动技能，<strong>目前开放的每个职业可使用的最大飞行技能数量为6个</strong>。被动技能和其他主动技能会在后续版本中逐渐添加完善。</p>
+                    <p>飞行技能有一定的飞行修为要求，当修为达到一定值时才能开启飞行技能装备栏的锁以及装备更为强力的飞行技能。</p>
+                    <p>学习新的飞行技能和升级原有的飞行技能都可以获得一定量的修为值。</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/心法技能" width="700" height="386" src="http://127.0.0.1:3000/img/xinrenshouce/del/20180705100130578.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <h2><span class="num">四</span>飞行技能使用</h2>
+                    <p>习得飞行技能后，可以在非翅膀状态下将飞行主动技能装备到技能面板中的装备栏内，或者在乘翅膀飞行状态是将技能面板内的技能拖到飞行专属的快捷栏内。</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/心法技能" width="365" height="54" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599563.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>在目标需求满足条件时，使用对应的按键即可使用。</p>
+                    <h2><span class="num">五</span>飞行技能升级</h2>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/心法技能" width="700" height="379" src="http://127.0.0.1:3000/img/xinrenshouce/del/263e802f070828388567bcc7b499a9014d08f1b8.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>点击飞行技能右下的<span class="esc">+</span>可以打开飞行技能升级面板，飞行技能升级需要消耗一定的飞行技能书残页。当残页数量满足升级要求时，可以直接点击升级按钮完成技能的升级操作。</p>
+                    <h2><span class="num">六</span>部分飞行技能效果演示</h2>
+                    <p>沐光之念•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》心法技能" width="550" height="303" src="http://127.0.0.1:3000/img/xinrenshouce/del/808a27dbb6fd526653ab26e9a718972bd507360f.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>天剑御体•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》飞行技能" width="549" height="301" src="http://127.0.0.1:3000/img/xinrenshouce/del/1a94b36eddc451dad8686c38bafd5266d1163203.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>擒魔•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="550" height="298" src="http://127.0.0.1:3000/img/xinrenshouce/del/20180705100052570.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>月落甘霖•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="548" height="285" src="http://127.0.0.1:3000/img/xinrenshouce/del/20180705100102848.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                                </div>
+                               
+                            </div>
+                            <div class="g-content" id="b9"style="display: none;">
+                                <div class="m-slogen"></div>
+                                <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>门派相关</span>/<span>门派技能</span>/<span>武器技能</span></div>
+                                <div class="m-content">
+                                    <h1>武器技能</h1>
+                                    <h2><span class="num">一</span>武器技能整体介绍</h2>
+                    <p>在天谕大世界内，翅膀给玩家提供飞行能力的同时也可以用于战斗，当玩家乘上翅膀时，每个职业都会拥有一套崭新而又有继承的空战飞行技能，使玩家能在浩瀚天空中更酣畅地战斗。</p>
+                    <p>飞行技能<span class="blue">只有在乘翅膀飞行状态下</span>才可以使用，而且<span class="blue">飞行状态下，陆地技能将全部无法使用</span>。</p>
+                    <p><strong>在近地面时，只要满足技能距离前提条件，飞行技能可以作用于陆地单位，陆地技能也可以作用于飞行中的单位。</strong></p>
+                    <p>相信有飞行技能加入后，《天谕》的战斗将更加精彩！</p>
+                    <h2><span class="num">二</span>飞行技能学习</h2>
+                    <p>飞行技能的学习需要对应的飞行技能秘籍，如图所示为其中的一本：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="317" height="236" src="http://127.0.0.1:3000/img/xinrenshouce/del/969cbf44ad345982a720ff6f00f431adcaef8461.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>在包裹中右键点击使用飞行技能秘籍，即可习得对应的飞行技能。打开飞行技能面板，可以看到新的飞行技能习得。</p>
+                    <h2><span class="num">三</span>飞行技能面板</h2>
+                    <p><strong>飞行技能面板中主要分为3块：</strong><span class="blue">主动技能</span>、<span class="blue">被动技能</span>和<span class="blue">主动技能装备栏</span>。</p>
+                    <p>目前版本的飞行技能中暂时没有开启飞行技能中的被动技能，<strong>目前开放的每个职业可使用的最大飞行技能数量为6个</strong>。被动技能和其他主动技能会在后续版本中逐渐添加完善。</p>
+                    <p>飞行技能有一定的飞行修为要求，当修为达到一定值时才能开启飞行技能装备栏的锁以及装备更为强力的飞行技能。</p>
+                    <p>学习新的飞行技能和升级原有的飞行技能都可以获得一定量的修为值。</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="天谕资料站/门派相关/门派技能/飞行技能" width="700" height="386" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599561.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <h2><span class="num">四</span>飞行技能使用</h2>
+                    <p>习得飞行技能后，可以在非翅膀状态下将飞行主动技能装备到技能面板中的装备栏内，或者在乘翅膀飞行状态是将技能面板内的技能拖到飞行专属的快捷栏内。</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="天谕资料站/门派相关/门派技能/飞行技能" width="365" height="54" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599563.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>在目标需求满足条件时，使用对应的按键即可使用。</p>
+                    <h2><span class="num">五</span>飞行技能升级</h2>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="天谕资料站/门派相关/门派技能/飞行技能" width="700" height="379" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599565.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>点击飞行技能右下的<span class="esc">+</span>可以打开飞行技能升级面板，飞行技能升级需要消耗一定的飞行技能书残页。当残页数量满足升级要求时，可以直接点击升级按钮完成技能的升级操作。</p>
+                    <h2><span class="num">六</span>部分飞行技能效果演示</h2>
+                    <p>沐光之念•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="550" height="303" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528725.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>天剑御体•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="549" height="301" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528727.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>擒魔•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="550" height="298" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528729.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>月落甘霖•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="548" height="285" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528731.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                                </div>
+                               
+                            </div>
+                            <div class="g-content" id="b10"style="display: none;">
+                                <div class="m-slogen"></div>
+                                <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>门派相关</span>/<span>门派技能</span>/<span>绝技技能</span></div>
+                                <div class="m-content">
+                                    <h1>绝技技能</h1>
+                                    <h2><span class="num">一</span>绝技技能整体介绍</h2>
+                    <p>在天谕大世界内，翅膀给玩家提供飞行能力的同时也可以用于战斗，当玩家乘上翅膀时，每个职业都会拥有一套崭新而又有继承的空战飞行技能，使玩家能在浩瀚天空中更酣畅地战斗。</p>
+                    <p>飞行技能<span class="blue">只有在乘翅膀飞行状态下</span>才可以使用，而且<span class="blue">飞行状态下，陆地技能将全部无法使用</span>。</p>
+                    <p><strong>在近地面时，只要满足技能距离前提条件，飞行技能可以作用于陆地单位，陆地技能也可以作用于飞行中的单位。</strong></p>
+                    <p>相信有飞行技能加入后，《天谕》的战斗将更加精彩！</p>
+                    <h2><span class="num">二</span>飞行技能学习</h2>
+                    <p>飞行技能的学习需要对应的飞行技能秘籍，如图所示为其中的一本：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》绝技技能" width="317" height="236" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528717.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>在包裹中右键点击使用飞行技能秘籍，即可习得对应的飞行技能。打开飞行技能面板，可以看到新的飞行技能习得。</p>
+                    <h2><span class="num">三</span>飞行技能面板</h2>
+                    <p><strong>飞行技能面板中主要分为3块：</strong><span class="blue">主动技能</span>、<span class="blue">被动技能</span>和<span class="blue">主动技能装备栏</span>。</p>
+                    <p>目前版本的飞行技能中暂时没有开启飞行技能中的被动技能，<strong>目前开放的每个职业可使用的最大飞行技能数量为6个</strong>。被动技能和其他主动技能会在后续版本中逐渐添加完善。</p>
+                    <p>飞行技能有一定的飞行修为要求，当修为达到一定值时才能开启飞行技能装备栏的锁以及装备更为强力的飞行技能。</p>
+                    <p>学习新的飞行技能和升级原有的飞行技能都可以获得一定量的修为值。</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="天谕资料站/门派相关/门派技能/飞行技能" width="700" height="386" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599561.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <h2><span class="num">四</span>飞行技能使用</h2>
+                    <p>习得飞行技能后，可以在非翅膀状态下将飞行主动技能装备到技能面板中的装备栏内，或者在乘翅膀飞行状态是将技能面板内的技能拖到飞行专属的快捷栏内。</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="天谕资料站/门派相关/门派技能/飞行技能" width="365" height="54" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599563.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>在目标需求满足条件时，使用对应的按键即可使用。</p>
+                    <h2><span class="num">五</span>飞行技能升级</h2>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="逆水寒/门派相关/门派技能/飞行技能" width="700" height="379" src="https://nie.res.netease.com/nie/nieimg/images/2015/6/11/2015-06-11_599565.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>点击飞行技能右下的<span class="esc">+</span>可以打开飞行技能升级面板，飞行技能升级需要消耗一定的飞行技能书残页。当残页数量满足升级要求时，可以直接点击升级按钮完成技能的升级操作。</p>
+                    <h2><span class="num">六</span>部分飞行技能效果演示</h2>
+                    <p>沐光之念•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《逆水寒》飞行技能" width="550" height="303" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528725.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>天剑御体•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="549" height="301" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528727.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>擒魔•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="550" height="298" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528729.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p>月落甘霖•翼：</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="《天谕》飞行技能" width="548" height="285" src="https://nie.res.netease.com/nie/nieimg/images/2015/1/10/2015-01-10_528731.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                                </div>                                
+                            </div>                        
+                    </div>
+                    <div class="g-main" id="d3" style="display: none;">
+                            <div class="g-content" id="b11">
+                                <div class="m-slogen"></div>
+                                <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html"  >逆水寒</a></span>/<span>角色相关</span>/<span>基础成长</span>/<span>角色基础属性</span></div>
+                                <div class="m-content">
+                                    <h1>角色基础属性</h1>
+                                    <p>在《天谕》里，角色有5类基础属性，分别是力量、智力、敏捷、体质和精神，基础属性的作用分为公共用途和职业用途。</p>
+                    <p>
+                    </p><table class="table-pic">
+                        <tbody>
+                            <tr>
+                                <td><img alt="角色基础属性" width="380" height="154" src="http://127.0.0.1:3000/img/xinrenshouce/del/jse.jpg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <h2><span class="num">一</span>公共用途为：</h2>
+                    <ul>
+                        <li>力量： 物理伤害 </li>
+                        <li>智力： 法术伤害 </li>
+                        <li>敏捷： 暴击力 </li>
+                        <li>体质： 生命值，坚毅 </li>
+                        <li>精神： 法力值，生命值回复，法力值回复，隐忍 </li>
+                    </ul>
+                    <p>其中坚毅这个属性可以提高每点物理护甲转换为物理防御的转化率，同理隐忍可以提高每点法术护甲转换为法术防御的转化率。</p>
+                    <p><strong>除了公共用途，每种基础属性针对不同职业还有其职业用途：</strong></p>
+                    <ul>
+                        <li>力量：力道（圣堂，光刃） </li>
+                        <li>智力：气劲（玉虚，灵珑） </li>
+                        <li>敏捷：力道（炎天），物理伤害（炎天） </li>
+                        <li>体质：无 </li>
+                        <li>精神：治疗能力（灵珑） </li>
+                    </ul>
+                    <p>其中力道这个属性可以提高每点物理攻击转换物理伤害的转化率，同理，气劲可以提高每点法术攻击转换法术伤害的转化率。</p>
+                    <h2><span class="num">二</span>基础属性获得</h2>
+                    <p>大家可以通过装备、神格等途径直接获得基础属性，也可以通过潜能点转换而来。初始情况下，转换1点基础属性只需要1点潜能点，但每转换10点某一基础属性，该基础属性所需要的潜能点就会加1。</p>
+                    <p>举个例子，如果大家目前有31点力量，其中10点来自于装备，神格等其他系统，21点通过潜能点转换而来，则这时候每转换1点力量需要3点潜能点。因此不推荐大家将所有的潜能点都消耗在同一种基础属性上。</p>
+                    <h2><span class="num">三</span>潜能点获得</h2>
+                    <p>大家升级即可自动获得潜能点，同时通过某些特殊途径还有机会获得“潜能牌”，使用后会永久获得大量潜能点。</p>
+                                </div>                                
+                            </div>
+                            <div class="g-content" id="b12" style="display: none">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html"  >逆水寒</a></span>/<span>角色相关</span>/<span>基础成长</span>/<span>人物境界</span></div>
+                                    <div class="m-content">
+                                        <h1>人物境界</h1>
+                                        <h2><span class="num">一</span>境界系统整体介绍</h2>
+                        
+                        <p>境界玩法是《逆水寒》游戏角色培养强化过程中一个非常重要的环节，也是玩家学习更高级技能修炼、获得门派时装坐骑等的前置条件。</p>
+                        
+                        <h2><span class="num">二</span>境界突破</h2>
+                        
+                        <p>打开人物属性面板（默认快捷键C），选择标签中的第二页境界页面可以显示如下界面，点击对应的境界圈可以查看该境界的详细内容。</p>
+                        
+                        <p>&nbsp;</p>
+                        
+                        <table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="人物境界" height="549" src="http://127.0.0.1:3000/img/xinrenshouce/del/20180705100106621.jpg" width="802"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p>在境界面板中，主要分为左右两个大区域——左边类似星图的部分为境界选择所需查看的境界；右边文字部分为对应左边所选境界的试炼前置条件、突破任务和突破奖励等。</p>
+                        
+                        <p>当人物培养满足试炼开启条件时（前置条件全部为绿色√，不满足时为红色×），玩家可以去苏澜大桥附近找到NPC秦少师领取对应境界的突破任务。</p>
+                        
+                        <p><strong>境界任务一般为击杀任务需求的怪物，如：</strong></p>
+                        
+                        <ol>
+                            <li><span class="num">1</span>炼气境界——击杀花海沉船地宫1层10只怪物；</li>
+                            <li><span class="num">2</span>凝神境界——击杀迷雾山谷（普通）副本中的BOSS“甲虫暴君”；</li>
+                            <li><span class="num">3</span>破虚境界——击杀地下长城（大逃杀）副本中的BOSS“长云”；</li>
+                            <li><span class="num">4</span>忘情境界——击杀机械迷城（弑神）副本中的BOSS“艾德-3000型”；</li>
+                        </ol>
+                        
+                        <p>完成任务后可以获得道具“元力精华•XX境界”。点击面板下方的突破至XX境界，使用对应元力精华确认即可完成对应境界突破，获得境界突破的属性、道具等奖励。</p>
+                        
+                        <h2><span class="num">三</span>境界突破奖励一览：</h2>
+                        
+                        <p>&nbsp;</p>
+                        
+                        <table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="人物境界" height="731" src="http://127.0.0.1:3000/img/xinrenshouce/del/20180705100104879.jpg" width="379"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                                    </div>                                    
+                                </div>
+                                <div class="g-content" id="b13" style="display: none">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>角色相关</span>/<span>基础成长</span>/<span>转职系统</span></div>
+                                    <div class="m-content">
+                                        <h1>转职系统</h1>
+                                        <p>2016年12月16日业影轮回资料片将开放转职系统，而新职业业刹的现世，相信很多玩家更是蠢蠢欲动，但对转职一定有很多疑问，寒姐这就给大家简单介绍一下转职系统。</p>
+                        
+                        <p>何为转职，顾名思义即转变职业，对应的装备、技能、外观等也会进行对应转变。</p>
+                        
+                        <h3>转换门派的基本条件</h3>
+                        
+                        <p><strong>49级前玩家拥有4次免费转职的机会</strong>，可前往<strong>新手转职（20级-49级）NPC：姒无双</strong>处转职。</p>
+                        
+                        <p>大于49级的玩家满足以下条件方可转职：</p>
+                        
+                        <p><strong><span style="color:#cc6600;">等级条件：</span>人物等级＞49级</strong></p>
+                        
+                        <p><strong><span style="color:#cc6600;">转换消耗：</span>门派转职信物和【心叶琼浆】</strong></p>
+                        
+                        <p><span style="color:#cc6600;"><strong>前置要求：</strong></span></p>
+                        
+                        <p><strong>门派信物获取：完成各门派转职前置任务即可获得。</strong></p>
+                        
+                        <ul>
+                            <li>【信物·守护之誓】完成圣堂转职任务后获得</li>
+                            <li>【信物·星寰之愿】完成玉虚转职任务后获得</li>
+                            <li>【信物·止水之刃】完成光刃转职任务后获得</li>
+                            <li>【信物·业火之核】完成炎天转职任务后获得</li>
+                            <li>【信物·纯白之华】完成灵珑转职任务后获得</li>
+                            <li>【信物·双生之魄】完成流光转职任务后获得</li>
+                            <li>【信物·无影之锋】完成业刹转职任务后获得</li>
+                        </ul>
+                        
+                        <p><strong>【心叶琼浆】获取：商城购买可获得。</strong></p>
+                        
+                        <h3>转换门派的转换方式</h3>
+                        
+                        <p>首先完成转职任务，前往<strong>转职任务NPC：姒语处</strong>，可在该NPC处接取各个门派的转职任务，需要转往哪个门派就接取哪个门派的转职任务，但是同时只能接一个门派的转职任务。</p>
+                        
+                        <p>然后携带门派信物与【心叶琼浆】前往<strong>转职NPC：姒无形处</strong>，可在该NPC处进行转职相关操作，<strong>具体有转换门派、装备转换、门派时装坐骑转换等。</strong></p>
+                        
+                        <h3>转换门派的相关规则</h3>
+                        
+                        <ol>
+                            <li><span class="num">1</span>45天内无法再次转投门派</li>
+                            <li><span class="num">2</span>转投门派后基础技能点保留，技能加点方案将全部清空重置。</li>
+                            <li><span class="num">3</span>转投门派后基础技能修炼点保留，修炼加点方案将重置<span style="color:#cc6600;"><strong>（当前门派学习的技能修炼书将保存，如重新转回来不需要消耗技能修炼书）</strong></span>。</li>
+                            <li><span class="num">4</span>转投门派后新门派的基础技能修炼如需要对应的技能修炼书，则需重新收集对应的技能修炼书。</li>
+                            <li><span class="num">5</span>转投门派后无双技能心得和等级将根据技能位置一一对应。</li>
+                            <li><span class="num">6</span>转投门派后无双技能悟道进度与悟道类型将根据技能位置一一对应。</li>
+                            <li><span class="num">7</span>无双技能悟道进度如未满，具体的各途径转换方式如下：道具提升途径按条目一一保留已提升值；非道具的普通提升途径按从上到下填充，即最简单的途径最先填满，最困难的途径最后再填。</li>
+                            <li><span class="num">8</span>转投门派后飞行技能等级将根据技能位置一一对应。</li>
+                            <li><span class="num">9</span>转投门派后您的人物加点方案都将清空，不保留，需要重新设置。</li>
+                            <li><span class="num">10</span>转投门派后部分装备将可能无法正常使用，大部分金装可使用装备转换功能转换到对应门派。</li>
+                            <li><span class="num">11</span>转投门派时会记录当前拥有的本职业装备或物品，转职后再得到的装备或物品后续将不可转换（当前还在宝箱、邮件等途径的物品也不可转换）</li>
+                            <li><span class="num">12</span>当前能用的装备，如果转门派之后依然可以使用，则无须也不可使用装备转换功能转换。</li>
+                            <li><span class="num">13</span>使用装备转换功能，某些属性/随机属性会根据一定规则转换成适用于新门派的属性。</li>
+                            <li><span class="num">14</span>手工装不可使用装备转换功能转换。</li>
+                            <li><span class="num">15</span>使用装备转换功能会使装备原先的拓印效果消失。</li>
+                            <li><span class="num">16</span>包裹/仓库内的龙渊套装激活宝珠无法转换，如需激活，请提前使用。</li>
+                            <li><span class="num">17</span>转投门派后，只有少量的门派时装和门派坐骑可使用门派时装坐骑转换功能转换（部分限制门派使用的时装将不可用）。</li>
+                            <li><span class="num">18</span>转投门派后，有可能会导致一些时装不可用（如改变了性别、体型等情况）。</li>
+                            <li><span class="num">19</span>转投门派后将清除一些不适合转职后存在的特殊状态效果。</li>
+                            <li><span class="num">20</span>转投门派后将取消部分玩法的排队。</li>
+                        </ol>
+                        
+                        <h3>装备转换的基础规则简述：</h3>
+                        
+                        <p><strong>在转职前包裹内、仓库内自己本职业可使用但转职后职业不可使用的装备才能进行装备转换。</strong><strong style="line-height: 20.7999992370605px;">玩家转职后，包裹和仓库内符合条件的装备可会出现“可转换”的标签，玩家可以在装备转换npc处将这些装备转成自己转职后可用的装备，简单的转换规则如下所述：</strong></p>
+                        
+                        <p><span style="color:#cc6600;"><strong>重点说明：装备</strong></span><strong style="line-height: 20.7999992370605px;"><span style="color:#cc6600;">转换遵循战力不变的总体原则，非绑定装备不能进行转换</span></strong><span style="color:#cc6600;"><strong>。</strong></span></p>
+                        
+                        <p><span style="color:#cc6600;"><strong>可转换装备：</strong></span></p>
+                        
+                        <p>弑神、帝社、驱魔、龙渊等职业金装均可进行转换</p>
+                        
+                        <p><span style="color:#cc6600;"><strong>装备基础转换：</strong></span></p>
+                        
+                        <p>装备蓝白字基础属性，对应转为转职后门派的装备基础属性</p>
+                        
+                        <p><span style="color:#cc6600;"><strong>前缀转换：</strong></span></p>
+                        
+                        <ol>
+                            <li><span class="num">1</span>常规前缀保留原有不变。</li>
+                            <li><span class="num">2</span>稀有前缀有特殊的具体对应规则，转职后可在装备转换处查询到具体转换属性。</li>
+                        </ol>
+                        
+                        <p><span style="color:#cc6600;"><strong>装备精炼：</strong></span></p>
+                        
+                        <ol>
+                            <li><span class="num">1</span>精炼等级和精炼度对应保留，属性根据转职后职业重新结算。</li>
+                            <li><span class="num">2</span>精炼觉醒如符合转职后装备类型的限定，则完全保留平移，若不符合（如各职业副手第三条的专属觉醒），那么采用一一对应方式转换，转职后可在装备转换处查询到具体转换属性。（品质固定不变，数值取对应值）。</li>
+                        </ol>
+                        
+                        <p><span style="color:#cc6600;"><strong>装备段位及纹印：</strong></span></p>
+                        
+                        <p>保持不变</p>
+                        
+                        <p><span style="color:#cc6600;"><strong>时装、坐骑相关：</strong></span></p>
+                        
+                        <ol>
+                            <li><span class="num">1</span>门派时装：可在转职后通过“门派时装与坐骑转换“功能转换，一一对应。</li>
+                            <li><span class="num">2</span>门派坐骑：可在转职后通过“门派时装与坐骑转换“功能转换，一一对应。保留饱食度、坐骑融合度、坐骑等级。</li>
+                        </ol>
+                        
+                        <p><span style="color:#cc6600;"><strong>不可转换内容</strong></span></p>
+                        
+                        <ol>
+                            <li><span class="num">1</span>手工装：如属性不合适或不可用，建议自己转移前缀后解绑出售。</li>
+                            <li><span class="num">2</span>护符：属性若不合适需自行解绑出售，更换新的护符。</li>
+                            <li><span class="num">3</span>徽章：属性若不合适需自行分解重新合成</li>
+                            <li><span class="num">4</span>徽章符文：属性若不合适，需自行更换调整</li>
+                            <li><span class="num">5</span>神格盘：自行更换适合转职后职业的神格盘</li>
+                            <li><span class="num">6</span>神格：本源神格在玉木村NPC处自行转换，其余神格保持不变。</li>
+                            <li><span class="num">7</span>非门派时装：通过时装兑换NPC自行兑换。</li>
+                            <li><span class="num">8</span>翅膀：保持原样</li>
+                            <li><span class="num">9</span>职业专精修炼：保持原样</li>
+                        </ol>
+                        
+                        <p><strong>重点提示：游戏内小精灵后续可以提前预览装备转换情况，该功能开启时会以新闻形式提前告诉大家。</strong></p>
+                        
+                        <h3>转职前相关准备及注意事项</h3>
+                        
+                        <ol>
+                            <li><span class="num">1</span>卸下所有装备（包括武器、装备、饰品、坐骑、翅膀）</li>
+                            <li><span class="num">2</span>卸下所有时装</li>
+                            <li><span class="num">3</span>卸下神格盘和其中所有的神格</li>
+                            <li><span class="num">4</span>不能在竞技场、战场排队报名状态</li>
+                            <li><span class="num">5</span>不能在武道会报名状态、生死场等待入场状态</li>
+                            <li><span class="num">6</span>保证不正在公会修炼场进行无双研习</li>
+                            <li><span class="num">7</span>必须清空跨服包裹、临时包裹、商城临时包裹，这些包裹内不能留有物品；材料背包、时装背包、任务背包不需要清空</li>
+                            <li><span class="num">8</span>邮箱内所有附件必须收取</li>
+                            <li><span class="num">9</span>不可在各类拍卖行中处于竞拍物品状态或正在出售物品的状态</li>
+                            <li><span class="num">10</span>不能在战斗状态、摆摊状态、交易状态、翅膀状态、坐骑状态或交互动作状态下</li>
+                            <li><span class="num">11</span>不能在变性准备、整型准备、更名准备或化妆准备状态下</li>
+                            <li><span class="num">12</span>不能在其他一些特殊状态下，如组队状态、随机组队等待状态、跨服状态等</li>
+                            <li><span class="num">13</span>保证不正在进行职业专属类的任务，如驱魔升段任务等</li>
+                        </ol>
+                        
+                        <h3>转职<span style="line-height: 20.7999992370605px;">具体</span>图文流程</h3>
+                        
+                        <p><span style="line-height: 20.7999992370605px;">转职以最终上线为准，下图仅作流程示意。</span></p>                      
+                       
+                       
+                                    </div>                                    
+                                </div> 
+                                <div class="g-content" id="b14">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>角色相关</span>/<span>多元成长</span>/<span>铭牌</span></div>
+                                    <div class="m-content">
+                                        <h1>铭牌</h1>
+                                        <p>铭牌是一种独特的展现个性的方式，当谕霸们佩戴好相应的铭牌后，其在游戏频道上发言会出现相应的图案。</p>
+                        
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img alt="铭牌2.jpg" src="http://127.0.0.1:3000/img/xinrenshouce/del/mingp.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p>【C】键打开人物属性面板，点击右上角【修改铭牌】按钮，可以替换佩戴的铭牌。</p>
+                        
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img alt="铭牌1.jpg" src="http://127.0.0.1:3000/img/xinrenshouce/del/mingp2.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>目前已经发放铭牌及获取方式：</h3>
+                        
+                        <ul>
+                            <li><span style="line-height: 20.7999992370605px;">部分排行榜会赠送限时的瑰宝阁</span>、豪气值、人品值排行榜奖励铭牌。</li>
+                            <li><span style="line-height: 20.7999992370605px;">官网活动，</span>2015年感动天谕10大人物可获专属铭牌（绝版）。</li>
+                            <li><span style="line-height: 20.7999992370605px;">游戏内活动赠送，首届跨服公会联赛冠军可获得</span>活动奖励的专属铭牌。</li>
+                        </ul>
+                        
+                        <p>&nbsp;</p>
+                                    </div>                                   
+                                </div> 
+                                <div class="g-content" id="b15">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>角色相关</span>/<span>多元成长</span>/<span>声望</span></div>
+                                    <div class="m-content">
+                                        <h1>声望系统</h1>
+                                        <p>云垂大陆，分布有各个<span class="blue"><strong>种族和派系</strong></span>，大部分种族派系你都可以和他们建立关系，用你的行动向他们表达友好或敌意，收获他们对你的尊敬或是直面他们对你的仇恨。</p>
+                        <p>除此种族派系外，你也能改变和各城镇的关系。这些关系，被称为声望。</p>
+                        <h2><span class="num">一</span>人们的反馈</h2>
+                        <p>当你的某个声望处于不同声望等级时，靠近那些族人，你会发现，他们会以不同的方式朝你打招呼。</p>
+                        <p>
+                        </p><table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《逆水寒》声望系统" width="416" height="673" src="http://127.0.0.1:3000/img/xinrenshouce/del/ch.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                        <h2><span class="num">二</span>购物特权</h2>
+                        <p>一个更高的声望等级，还对应了你能在它的声望商店购买的物品的范围，如果你只有最低级的银卡，那你就只能买一小部分物品，而最好最给力的物品，一定是需要更高的购买特权才能买的。</p>
+                        <p>
+                        </p>
+                        <p></p>
+                        <h2><span class="num">三</span>求购贡品</h2>
+                        <p>每个声望都会有一个专门的求购贡品的商店，当你在云垂大陆行走时，也许你能获得各个声望的贡品，带着这些贡品寻找相应的求购商店，你就能获得一笔声望提升。</p>
+                        <p><strong>声望等级越高时，出售贡品能收获的声望也越多哦。</strong></p>
+                        <p>
+                        </p><table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《逆水寒》声望系统" width="299" height="268" src="http://img.nie.163.com/images/2015/1/10/2015-01-10_528769.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                        <h2><span class="num">四</span>专属奖励</h2>
+                        <p>当你达成某些声望的特定等级时，你就能获得专属奖励。</p>
+                        <p>
+                        </p><table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《逆水寒》声望系统" width="359" height="327" src="http://img.nie.163.com/images/2015/1/10/2015-01-10_528771.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                        <h2><span class="num">五</span>隐士真传</h2>
+                        <p>如果你从事某项生活技能，那你就会发现，要达成最高造诣实在是太难了，这时，你就需要有个前辈给你一些指点。</p>
+                        <p>这些前辈都藏身于各个城镇或族群中，过着安逸的日子。要拜访他们，你首先需要达成相应声望的最高等级。</p>
+                        <p>
+                        </p><table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《逆水寒》声望系统" width="515" height="91" src="http://img.nie.163.com/images/2015/1/10/2015-01-10_528773.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                        <strong>（资料并非最终版本，仅供当前游戏版本参考。）</strong>
+                                    </div>                                   
+                                </div>  
+                                <div class="g-content" id="b16">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href="http://tianyu.163.com/zlz" target="_blank">天谕资料站</a></span>/<span>角色相关</span>/<span>多元成长</span>/<span>成就</span></div>
+                                    <div class="m-content">
+                                        <h1>成就</h1>
+                                        <p>玩家通过完成游戏中的一系列特殊要求后，便可以获得相关成就了。有些成就是唯一性的，所以拥有一定实力的人才能拿到哦。</p>
+                        <p>成就系统默认快捷键<span class="esc">Y</span></p>
+                        <p>
+                        </p><table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《天谕》成就" width="679" height="471" src="http://127.0.0.1:3000/img/xinrenshouce/del/cj.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                                    </div>                                    
+                                </div> 
+                                <div class="g-content" id="b17">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>角色相关</span>/<span>多元成长</span>/<span>称号</span></div>
+                                    <div class="m-content">
+                                        <h1>称号</h1>
+                                        <p>在人物属性界面中，点击修改称号按钮，即可以打开称号界面。</p>
+                        <p>称号分为个性称号和世界称号，其中个性称号，玩家可以通过完成成就、事件来获得，而获得的称号又分为前缀称号、颜色称号、基本称号，玩家可以自行组合称号，彰显个性。</p>
+                        <p>
+                        </p><table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《逆水寒》称号" width="352" height="567" src="http://127.0.0.1:3000/img/xinrenshouce/del/cheng.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                        <p>世界称号是特定的称号，所以不能和个性称号组合使用。</p>
+                                    </div>                                    
+                                </div>
+                                <div class="g-content" id="b18">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html" target="_blank">逆水寒</a></span>/<span>角色相关</span>/<span>多元成长</span>/<span>境界</span></div>
+                                    <div class="m-content">
+                                        <h1>境界</h1>
+                                        <h2><span class="num">一</span>境界系统介绍</h2>
+                        
+                        <p>境界阶系统就是《逆水寒》中的PVP等级系统，所有PVP活动奖励均通过军阶系统发放，玩家可以选择自己喜欢的PVP活动来获取相应的奖励。</p>
+                        
+                        <p><strong>境界系统中主要存在两个数值：</strong></p>
+                        
+                        <h3>1、战勋：</h3>
+                        
+                        <p>战勋用于境界提升，获取后不会减少，每周一零点会一次性获取上周军阶值，每周战勋可以自动兑换军阶值，战勋达到一定值可领取周俸；每周服务器战勋排名前200名玩家，可获得一定的军阶值和战勋排名属性</p>
+                        
+                        <h3>2、境界：</h3>
+                        
+                        <p>玩家通过每周的境界活动和各种PVP玩法可获得境界，在军阶NPC处，可用境界兑换PVP专属套装、帝印、时装、材料、技能书等道具，可兑换物品会受到军阶等级限制，而每周获得的上限与军阶等级有关，等级越高，上限越高。</p>
+                        
+                        <h2><span class="num">二</span>境界的提升</h2>
+                        
+                        <p>打开人物属性面板（默认快捷键<span class="esc">C</span>），选择军阶标签可以查看自己当前的军阶详情。c</p>
+                        
+                       
+                        
+                        <p>面板左方部分为当前军阶等级和战勋值，当前军阶以及下一级军阶对应的奖励和军资战勋上限；面板右方为玩家的具体军资数值。</p>
+                        
+                        <p>玩家可以点击面板中的本周军阶活动，完成相应任务获得部分军资和战勋，也可以通过参与其他PVP活动（如：战场、竞技场、生死场、玉木峰等）获得该活动的固定战勋/军资奖励。</p>
+                        
+                       
+                        
+                        <p>当战勋值达到升阶条件后，玩家可以到星际城“帝社军阶晋升官-原无极”（1551&nbsp; 1580）处领取对应的军阶提升任务，完成后可以获得对应的军阶晋升令。</p>
+                        
+                        <p>点击面板中的军阶提升按钮，可以消耗对应的晋升令来提升自己的军阶等级。通过军阶等级的提升，玩家可以获得更高的每周军资和战勋上限。</p>
+                        
+                        <p>目前开放的军阶等级及其对应的军资战勋值如下（其中，最后的“添翼”和“冲霄”龙将需要在龙将基础上获得战勋排名后才可以晋升——上周排名前10为“冲霄”，前200为“添翼”）：</p>
+                        
+                        <table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《逆水寒》境界" height="341" src="https://nie.res.netease.com/nie/nieimg/images/2015/4/2/2015-04-02_563463.jpg" width="368"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h2><span class="num">三</span>境界奖励</h2>
+                        
+                        <h3>排名奖励：</h3>
+                        
+                        <table class="table-pic">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="《逆水寒》境界" height="223" src="https://nie.res.netease.com/nie/nieimg/images/2015/4/2/2015-04-02_563465.jpg" width="552"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>道具奖励：</h3>
+                        
+                        <p>每周战勋达到俸禄要求后，可以点击领取军阶奖励来获取该周的军阶俸禄奖励。</p>
+                        
+                        <p>每次提升军阶等级后均可以获得一个一次性升级奖励，可以获得大量战斗增益道具。</p>
+                        
+                        <p>累积获得的军阶值可以到星际城帝社商店处兑换对应的时装、装备、药品、技能书、材料、帝印等奖励。</p>
+                        
+                        <h2><span class="num">四</span>名将系统</h2>
+                        
+                        <p><strong>“梦回苏澜”资料片全新开放的名将赛季系统——更多挑战，更多荣耀！</strong></p>
+                        
+                        <table style="line-height: 20.7999992370605px;">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="2" src="https://nie.res.netease.com/r/pic/20170609/cebe7ffd-9364-422d-b3b0-e90af2b2cea9"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p style="line-height: 20.7999992370605px;">名将赛季系统是“梦回苏澜”资料片针对游戏中后期PVP的重要玩法，它将以赛季的形式开启-重置-再开启。</p>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>1.达到龙将的玩家可以升级为名将</strong></p>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>2.名将等级依次为添翼，冲宵，天煞，龙腾，霸王，盖世共6阶，每阶3星满后即可升入下一阶段，达到盖世3星的玩家可以升级为至尊名将，星级无上限。</strong></p>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>3.玩家可以通过威望值来进行名将升级，威望值的获取途径主要包括：</strong></p>
+                        
+                        <ul style="line-height: 20.7999992370605px;">
+                            <li>周战勋排行榜前200名可获得对应的威望</li>
+                            <li>无排行玩家，本周战勋达2000,5000,8000可获得对应的威望奖励。</li>
+                        </ul>
+                        
+                        <h3 style="line-height: 20.7999992370605px;">名将加持</h3>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>名将加持是名将赛季系统的关键玩法之一，玩家每升1星，可以开放1个强力的名将加持，玩家可以从每阶开放的名将加持中选择1个进行装备（每个名将等级加持3选1，最多装备6个）</strong></p>
+                        
+                        <table style="line-height: 20.7999992370605px;">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="3" src="https://nie.res.netease.com/r/pic/20170609/45c907cf-9e98-4fc7-b57c-60b33704c799"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p style="line-height: 20.7999992370605px;">所有的名将加持技能将在赛季结束时重置回收，同时为了保证公平性，加持无法用于副本，心魔等PVE玩法和竞技场等竞技性PVP玩法。</p>
+                        
+                        <p style="line-height: 20.7999992370605px;">基于此，我们在名将加持技能的设计上采用了更加大胆的方式，力求每个职业可选择的加持看上去都非常“强大”，合理搭配名将加持技能将极大地增强本职业的作战能力。</p>
+                        
+                        <p style="line-height: 20.7999992370605px;">同时我们也会担心部分设计会给玩家带来不太良好的游戏体验，所以在此次资料片开启的第一个名将赛季，加持技能尚未稳定前，我们会持续监控这些加持的数据表现以及影响，及时地做出改动和调整。</p>
+                        
+                        <h3 style="line-height: 20.7999992370605px;">名将系统奖励</h3>
+                        
+                        <p style="line-height: 20.7999992370605px;">在名将系统中，我们设置了非常丰富的投放，包括海量的云垂积分，圣战遗卷【匣】，也为名将等级达到指定标准的谕霸准备了更多的帝王墨购买和获取方式。</p>
+                        
+                        <p style="line-height: 20.7999992370605px;">奖励的获取方式分为四种</p>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>· &nbsp;名将升级奖励：</strong><br>
+                        &nbsp; &nbsp; 名将等级每升1星，都可以获得相应的名将晋升奖励<br>
+                        &nbsp; &nbsp; 达到名将盖世3星，可以获得稀有赛季限定背饰——盖世圣剑（外形先卖个关子，总之非常酷炫！）</p>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>· &nbsp;名将赛季奖励：</strong><br>
+                        &nbsp; &nbsp; 赛季结束时，根据玩家当前不同的名将等级发放大量的赛季奖励。</p>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>· &nbsp;赛季名将排行奖励：</strong><br>
+                        &nbsp; &nbsp; 赛季结束时，根据玩家名将等级排行，给本服前30名的名将玩家发放极其稀有的限量奖励</p>
+                        
+                        <p style="line-height: 20.7999992370605px;"><strong>· 名将特权商店（后续开放）：</strong><br>
+                        &nbsp; &nbsp;玩家达到不同的名将等级可以享受相应的物品购买特权。<br>
+                        &nbsp; &nbsp;玩家达到不同的名将等级，可以用不同的折扣购买限量道具。</p>
+                        
+                        <h3 style="line-height: 20.7999992370605px;">名将记</h3>
+                        
+                        <ul style="line-height: 20.7999992370605px;">
+                            <li>在赛季过程中，帝社会编撰名将记，来记录那些引人瞩目的名将。</li>
+                            <li>云垂名将记包含12个限时的依次开放的名将记。</li>
+                            <li>在时限内先达到相应名将等级的玩家就可以被记录在名将记中，获得相应的奖励。</li>
+                            <li>在每周周二12点，帝社进行名将记的编撰。</li>
+                            <li>最大记录人数：每个名将记最多的达到人数。</li>
+                            <li>若编撰时，达到相应名将等级的玩家超过最大记录人数，则选取名将等级更高、威望值更多的玩家进入名将记。</li>
+                            <li>若在编撰时，该名将记提前达到了最大奖励人数，则会立即开放下一个名将记。&nbsp;</li>
+                        </ul>
+                        
+                        <table style="line-height: 20.7999992370605px;">
+                            <tbody>
+                                <tr>
+                                    <td><img alt="4" src="https://nie.res.netease.com/r/pic/20170609/31c8f889-7676-4ead-93da-9277b4d6c8b0"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3 style="line-height: 20.7999992370605px;">至尊殿堂</h3>
+                        
+                        <ul style="line-height: 20.7999992370605px;">
+                            <li>帝社将在赛季结束时，将各个职业前5名的至尊名将记录在至尊殿堂中，永久记录，荣耀永存。</li>
+                            <li>必须先达到至尊名将，才能获得进入资格。</li>
+                            <li>当玩家名将等级相同时，会比较玩家当前的威望，威望相同时，会比较玩家当时的战斗力。</li>
+                        </ul>
+                        
+                        <h3 style="line-height: 20.7999992370605px;">名将赛季说明</h3>
+                        
+                        <ul style="line-height: 20.7999992370605px;">
+                            <li>在本资料片开放时，开启第一赛季的名将争霸</li>
+                            <li>赛季将大约持续数月，预计将在后续资料片开启下个赛季</li>
+                            <li>名将系统开放时，若服务器开服时间未达60天，则视为新服，本赛季不开放名将系统（将在下个赛季开放）</li>
+                            <li>赛季结束时，将重置如下数据：【名将等级与名将加持】【玩家当前的威望值】【名将记】</li>
+                        </ul>
+                                    </div>                                   
+                                </div>                       
+                        </div>                       
+                        <div class="g-main" id="d4" style="display: none;">
+                                <div class="g-content" id="b19" style="min-height:1300px;">
+                                    <div class="m-slogen"></div>
+                                    <div class="m-navpositon"><span><a href=""  >逆水寒</a></span>/<span>副本一览</span>/<span>江湖挑战</span>/<span>四帝炼境</span></div>
+                                    <div class="m-content">
+                                        <h1>四帝炼境</h1>
+                                        <div class="g-frame">
+                            <div class="m-fbcontent">
+                                <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-sdlj_01.jpg">
+                                <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-sdlj_02.jpg">
+                                <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-sdlj_03.jpg">
+                                <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-sdlj_04.jpg">
+                            </div>
+                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="g-content" id="b20" style="min-height:1300px; display: none" >
+                                        <div class="m-slogen"></div>
+                                        <div class="m-navpositon"><span><a href=""  >逆水寒</a></span>/<span>副本一览</span>/<span>个人副本</span>/<span>训练场</span></div>
+                                        <div class="m-content">
+                                            <h1>训练场</h1>
+                                            <div class="g-frame">
+                                <div class="m-fbcontent">
+                                    <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-xlc_01.jpg">
+                                    <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-xlc_02.jpg">
+                                    <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-xlc_03.jpg">
+                                    <img src="http://127.0.0.1:3000/img/xinrenshouce/del/fb-xlc_04.jpg">
+                                </div>
+                            </div>
+                                        </div>                                       
+                                    </div>                               
+                            </div>
+                            <div class="g-main" id="d5" style="display: none;">
+                                    <div class="g-content" id="b21">
+                                        <div class="m-slogen"></div>
+                                        <div class="m-navpositon"><span><a href="http://127.0.0.1:3000/index.html"  >逆水寒</a></span>/<span>PVP活动</span>/<span>小队PVP</span>/<span>竞技场</span></div>
+                                        <div class="m-content">
+                                            <h1>竞技场</h1>
+                                            <h2><span class="num">一</span>竞技场联赛：</h2>
+                            <p>竞技场联赛为一个基于跨服竞技场的全服统一时间和规则的周期性玩法。</p>
+                            <p>游戏目前的竞技场等级段分为1-59；60-69；70-79三个等级段，每个等级段联赛彼此独立。</p>
+                            <p>竞技场联赛周期为3个月，每个赛季之间彼此独立，每年包含的赛季如下：</p>
+                            <p>
+                            </p><table class="table-pic">
+                                <tbody>
+                                    <tr>
+                                        <td><img alt="竞技场联赛说明" width="338" height="123" src="http://127.0.0.1:3000/img/xinrenshouce/del/pvp1.jpg"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p></p>
+                            <h2><span class="num">二</span>跨服段位赛</h2>
+                            <p><strong>赛制人数：</strong>3V3</p>
+                            <p><strong>开放时间：</strong>每晚19-24点开放</p>
+                            <p><strong>参与人数：</strong>必须三人组队参加</p>
+                            <p><strong>报名方式：</strong><span class="esc">H</span>键打开竞技场面板，选择跨服段位赛即可报名参加</p>
+                            <p><strong>赛制介绍：</strong>比赛中连续获得2小局胜利即可直接关闭该场比赛。如在规定时间内无法分出胜负则为平局。</p>
+                            <p>段为赛取胜后可获得战勋和军资奖励，只有参与竞技场段位赛才可以增/减竞技场段位等级。</p>
+                            <h2><span class="num">三</span>竞技场段位</h2>
+                            <p>竞技场段位是所有竞技场中评价玩家强弱的数值，所有类型的竞技场匹配以其竞技场段位作为标准。</p>
+                            <p>每个赛季玩家的竞技场段位将会进行重新计算：新赛季开启后，玩家的段位等级统一扣除500，最低不低于800。</p>
+                            <p><span class="blue"><strong>每个等级段的竞技场段位彼此独立，当玩家从一个等级段跨入新的等级段时（如从59级升至60级），竞技场段位将会重置为800。</strong></span></p>
+                            <p><span class="blue"></span>竞技场段位包含段位和段位等级2个数值，如下：</p>
+                            <p>
+                            </p><table class="table-pic">
+                                <tbody>
+                                    <tr>
+                                        <td><img alt="竞技场联赛说明" width="322" height="549" src="http://127.0.0.1:3000/img/xinrenshouce/del/pvp2.jpg"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p></p>
+                            <h2><span class="num">四</span>每周段位赛试炼</h2>
+                            <p>每个玩家每周需要至少参加10场竞技场段位赛，如到周日12:00截止时，仍未参加10场竞技场段位赛，则在每周日12:00截止时，扣除50点段位等级（最低不低于800）</p>
+                            <p>完成每周段位赛试炼后，可根据当前的段位和所属等级段领取周奖励，段位越高，奖励越丰厚。</p>
+                            <h2><span class="num">五</span>跨服匹配赛</h2>
+                            <p>匹配赛是一个完全独立于段位赛的竞技场机制。以玩家的段位等级为基准进行匹配。胜负不影响玩家的段位等级。</p>
+                            <p><strong>赛制人数：</strong>3V3</p>
+                            <p><strong>开放时间：</strong>每天12点至次日凌晨2点开放</p>
+                            <p><strong>参与人数：</strong>支持单人报名，亦可组队参加</p>
+                            <p><strong>报名方式：</strong><span class="esc">H</span>键打开竞技场面板，选择跨服匹配赛即可报名参加</p>
+                            <p><strong>赛制介绍：</strong>比赛中连续获得2小局胜利即可直接关闭该场比赛。如在规定时间内无法分出胜负则为平局。</p>
+                            <p>匹配赛取胜后可获得战勋和军资奖励，奖励数值由玩家当前的段位等级决定。该模式胜利可以提升竞技场战斗力但无法提升竞技场等级。</p>
+                            <h2><span class="num">六</span>段位赛及匹配赛胜场奖励</h2>
+                            <p>每次赢得段位赛和匹配赛都可以获得战勋及军资奖励</p>
+                            <p>获得的战勋及军资奖励跟玩家当前的段位相关：</p>
+                            <p>
+                            </p>
+                            <p></p>
+                            <h2><span class="num">七</span>个人竞技场战斗力</h2>
+                            <p>个人竞技场战斗力是一个独立于竞技场段位的数值，用于评价玩家的竞技场战斗实力。</p>
+                            <p>参加竞技场段位赛和匹配赛都可以提升个人的竞技场战斗力。</p>
+                            <p>竞技场战斗力由玩家当前赛季的段位、胜率和胜场次数决定。</p>
+                            <h2><span class="num">八</span>竞技场联赛排行榜</h2>
+                            <p>1. 本服排行榜及全服排行榜</p>
+                            <p>根据玩家当前的段位等级，对本服和全服的玩家进行排名，形成2个榜单。</p>
+                            <p>2. 分等级段排行榜</p>
+                            <p>游戏目前的竞技场等级段分为1-59；60-69；70-79三个等级段，每个等级段的竞技场联赛独立榜单。</p>
+                            <h2><span class="num">九</span>竞技场联赛总决赛</h2>
+                            <p>当赛季结束后，根据全服的段位排行，筛选高排名的玩家组成战队进行联赛总决赛。</p>
+                            <p>联赛总决赛采取独立的淘汰赛制。</p>
+                            <p>具体的总决赛玩法介绍将在后期公布！</p>
+                                        </div>                                        
+                                    </div>
+                                    <div class="g-content" id="b22"style="display: none;">
+                                            <div class="m-slogen"></div>
+                                            <div class="m-navpositon"><span><a href=""  >逆水寒</a></span>/<span>PVP活动</span>/<span>小队PVP</span>/<span>掠影谷战场</span></div>
+                                            <div class="m-content">
+                                                <h1>掠影谷战场</h1>
+                                                <p>每方各有10名玩家150个资源点，将对方资源耗尽来获取胜利。玩家1点资源，每方左、右路精英30点，中路精英40点。敌方每死亡一只小怪价值1点贡献分，玩家2点，队长怪物3点，精英30点，贡献分可以在商店里换购强力的辅助物物品。上下路各有两只，死亡后掉落强力载具，一定要好好把握哦！</p>
+                                <p><strong>参与人数：</strong>10vs10</p>
+                                <p><strong>个人报名：</strong>每周二、四、六全天开放</p>
+                                <p><strong>团队以及队伍报名：</strong>每周二、四、六晚20:00-24:00开放</p>
+                                <p><strong>等级分段：</strong>40-49、50-59、60-69、70-79、80</p>
+                                <p><strong>战场限时：</strong>30分钟 </p>
+                                <h2><span class="num">一</span>地图介绍</h2>
+                                <p>
+                                </p><table class="table-pic">
+                                    <tbody>
+                                        <tr>
+                                            <td><img alt="《逆水寒》战场" width="356" height="339" src="http://127.0.0.1:3000/img/xinrenshouce/del/bd4353887362133791e83e81e3070741899fba58.jpg"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p></p>
+                                <p>掠影谷战场一共有三条路，四座山体。</p>
+                                <p>两座大型的山体已经被打通，里面各藏着一只到<strong>“盗宝鼠”。</strong>大型山体中的三条山洞链接了两条中路及左路。而两个小型山地的山洞则接通了中路和右路。</p>
+                                <p><strong>这些都是方便玩家进行战略转移及偷袭而存在的。</strong></p>
+                                <p>中路左右横穿将地图划分为两半，在<strong>中路的左右两端附近</strong>存有两只强力而又强悍的<strong>载具怪</strong>，拿到他们可以提供很大的帮助！</p>
+                                <p>三条路上<strong>翼族、熊族</strong>都分别派出了实力相当的部队进行对抗，每条路上都有<strong>五只小兵怪物</strong>，<strong>三只近战、两只远程</strong>。</p>
+                                <p>战场中每隔一段时间，在三路上便会刷出一只强力的队长怪物，队长怪物对敌方的怪物会造成额外的伤害加成！所以，一定要保护好自己的队长怪物而要尽早的干掉对方的！</p>
+                                <h2><span class="num">二</span>贡献分机制和商店</h2>
+                                <p>战场过程中，玩家击杀敌方玩家、怪物、精英等均会获取相对应的贡献分值，该贡献分整个团队共享。玩家可以战场商店里通过消耗贡献分购买一些特殊的战场道具。</p>
+                                <h3>贡献分对应：</h3>
+                                <ol>
+                                    <li><span class="num">1</span>玩家——2分 </li>
+                                    <li><span class="num">2</span>小怪——1分 </li>
+                                    <li><span class="num">3</span>精英——30分 </li>
+                                    <li><span class="num">4</span>队长——3分 </li>
+                                    <li><span class="num">5</span>载具怪——20分 </li>
+                                    <li><span class="num">6</span>药品怪——10分 </li>
+                                </ol>
+                                <h3>战场商店物品：</h3>
+                                <ol>
+                                    <li><span class="num">1</span>隐身药剂——30分：使用后进入隐身状态持续5分钟，攻击或被攻击后解除该状态 </li>
+                                    <li><span class="num">2</span>回生符——30分：使用后恢复100%生命值 </li>
+                                    <li><span class="num">3</span>朱雀令——100分：使用后对怪物的伤害提升20% </li>
+                                    <li><span class="num">4</span>玄武令——200分：使用后对怪物的伤害提升50% </li>
+                                    <li><span class="num">5</span>白虎令——350分：使用后对怪物的伤害提升100% </li>
+                                    <li><span class="num">6</span>青龙令——600分：使用后对怪物的伤害提升200% </li>
+                                </ol>
+                                <h2><span class="num">三</span>特殊玩法</h2>
+                                <p>
+                                </p>
+                                <p></p>
+                                <h3>载具怪</h3>
+                                <p>战场<strong>开启5分钟后</strong>会在中路左、右两端各刷新一只载具怪，这两只载具怪击杀后掉落<strong>“魂魄精华”，</strong>任何人均可以对其使用，使用后，玩家则变身成其持续一段时间。这段时间内玩家可以好好利用这个载具为己方团队取得一番巨大的优势。</p>
+                                <p>载具怪死亡后，<strong>每隔5分钟会再次刷新一只新的载具怪出来</strong>，届时战场内会有刷新信息提前通知给战场内的玩家。</p>
+                                <p>
+                                </p>
+                                <p></p>
+                                <p>掠影谷战场的山体中隐藏着两只“药品怪”，两只药品怪击杀后会随机掉落三种BUFF。</p>
+                                <ol>
+                                    <li><span class="num">1</span>BUFF1：持续回血，每5s恢复5%，持续一段时间 </li>
+                                    <li><span class="num">2</span>BUFF2：霸体，进入霸体状态持续一段时间 </li>
+                                    <li><span class="num">3</span>BUFF3：暴击，提高暴击属性100%持续一段时间<br>
+                                    <table class="table-pic">
+                                        <tbody>
+                                            <tr>
+                                                <td><img alt="《逆水寒》战场" width="180" height="250" src=""></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </li>
+                                </ol>
+                                <h2><span class="num">四</span>胜负奖励机制</h2>
+                                <p><strong>战场结果共有：</strong>胜、负、平三种。</p>
+                                <p>在30分钟内，哪方资源点被降至“0”后，则哪方失败。</p>
+                                <p>30分钟内双方没有降至“0”时，对双方存有资源点进行对比，分数高者获胜。</p>
+                                <h3>战场奖励：</h3>
+                                <p>在一场战场战斗中，将对方资源消耗50点，可以额外获取一些收益；</p>
+                                <p>同理在一场战场战斗中，将对方资源消耗100点后，可以获取更多的额外收益；</p>
+                                <p>战场结束后对本场战斗中表现优异的玩家进行一些<strong>额外奖励：</strong></p>
+                                <ol>
+                                    <li><span class="num">1</span>助攻最多的玩家； </li>
+                                    <li><span class="num">2</span>治疗值最高的玩家； </li>
+                                    <li><span class="num">3</span>伤害值最大的玩家； </li>
+                                    <li><span class="num">4</span>击杀玩家最多的玩家； </li>
+                                    <li><span class="num">5</span>以及表现最优越的MVP玩家。 </li>
+                                </ol>
+                                <strong>（资料并非最终版本，仅供当前游戏版本参考。）</strong>
+                                            </div>                                            
+                                        </div>                                    
+                                </div>
+                                <div class="g-main" id="d6" style="display: none;">
+                                        <div class="g-content" id="b23" style="min-height:1300px;">
+                                            <div class="m-slogen"></div>
+                                            <div class="m-navpositon"><span><a href=""  >逆水寒</a></span>/<span>活动休闲</span>/<span>任务系统</span>/<span>主线剧情</span></div>
+                                            <div class="m-content">
+                                                <h1>主线剧情</h1>
+                                                <p>苏澜宁静的海波下，古老的秘密被迫永远沉睡；青麟木下，光鲜华丽的狐族背后挥之不去一抹哀伤；岩锤要塞边，血与火的交融，一曲云垂与北狼的慷慨悲歌；神翼原上，亘古战意能否找到它的继承之人……和一起成长的小伙伴们一起探索这片古老神秘的大陆上所掩藏的惊人秘密吧。</p>
+                                <p>主线任务接取NPC上方会有<strong><span class="esc">黄色叹号</span></strong>。而当玩家初次进入《天谕》的绚烂世界，便已经开启了自己的主线冒险。通过通过<span class="esc">M</span>键的大地图查看到黄色叹号标识。<strong>如果你不小心放弃了主线任务，可以在<span class="esc">L</span>键任务面板“可接任务”栏主线分支找到它们。</strong></p>
+                                <p>通过主线任务，玩家可获得大量经验、金钱、相应地区的声望，还可以获取装备、时装和各种珍贵道具。</p>
+                                <p>
+                                </p><table class="table-pic">
+                                    <tbody>
+                                        <tr>
+                                            <td><img alt="《逆水寒》主线任务" width="700" height="461" src="http://127.0.0.1:3000/img/xinrenshouce/del/juqing.jpg"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p></p>
+                                            </div>                                            
+                                        </div>
+                                        <div class="g-content" id="b24" style="min-height:1300px;display: none ">
+                                                <div class="m-slogen"></div>
+                                                <div class="m-navpositon"><span><a href=""  >天谕资料站</a></span>/<span>活动休闲</span>/<span>任务系统</span>/<span>支线任务</span></div>
+                                                <div class="m-content">
+                                                    <h1>支线任务</h1>
+                                                    <p>支线就像是一部多姿多彩的云垂风物志，你在这里可以看到草根们的囧人囧事，也能了解到种族间的矛盾纠葛，无论是那些奇闻怪谈还是市井趣闻，都能让你有意想不到的惊喜。</p>
+                                    <p>支线任务接取NPC上方会有<span class="esc">蓝色叹号</span>。当玩家22级跟随小洛解决完苏澜城主府的麻烦后，便会开启支线旅程。通过<span class="esc">M</span>键的大地图查看以及<span class="esc">L</span>键任务面板的“可接任务”栏可以找到相应任务。</p>
+                                    <p>（当玩家等级超过支线的推荐等级20级，地图上将不会显示该支线的蓝色叹号标识。）</p>
+                                    <p>支线任务是除了主线外经验最多的任务，通过支线任务，玩家可获得相应地区的声望、云币或云券，有些任务还有药品投放，甚至<strong>“醉生梦死”</strong>这种高级温泉酒都会有哦。</p>
+                                    <p>
+                                    </p><table class="table-pic">
+                                        <tbody>
+                                            <tr>
+                                                <td><img alt="《逆水寒》支线任务" width="700" height="461" src="http://127.0.0.1:3000/img/xinrenshouce/del/juqing2.jpg"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p></p>
+                                                </div>                                               
+                                            </div>                                        
+                                    </div>
+                                </div>
+            </div>   
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/jquery.min.js"></script>
+<script src="js/detail.js"></script>
+</body>
+</html>

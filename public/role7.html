@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/role7.css"/>
+     <script src="js/jquery-1.11.3.js"></script>
+    <title></title>
+</head>
+<body class="profession">
+    <!-- *******************第一个页面************************************* -->
+     <div class="d7"> 
+        <div class="d7-1"></div> <!--人物-->
+        <div class="d7-5"></div> 
+         <div class="d7-6"></div>
+  
+          <!-- 按钮  -->
+      <div class="d7-7">
+         <a href="#" class="d7-btn1"></a>
+         <a href="#" class="d7-btn2"></a> 
+       </div>
+       
+        <div class="d7-8">
+          <div class="d7-81"></div>
+          <div class="d7-82"></div>  
+          <div class="d7-83"></div>
+         <!-- 视频 -->
+<div class="video">
+    <video src="http://127.0.0.1:3000/img1/fan/8ba6037ab43dce17fecc1284110001e2qt.mp4" 
+     autoplay   loop   muted  class="v3"></video>
+    <!-- 广告 -->
+    <!-- <img src="../视频文件/res/966.png"  class="ad"   alt=""> -->
+    <!-- 按钮图片 -->
+     <a class="ctrl">
+      <img src="http://127.0.0.1:3000/img1/fan/play-icon_beae01d.png" alt="">
+      </a>
+  </div> 
+  <span>点击鼠标左右滑动</span><!-- 鼠标字 -->
+        </div>
+
+       <!-- 技能 -->
+       <div class="d7-bb1"></div>
+
+        <!-- 视频 -->  
+        <div class="big-video  fade">
+          <video src="http://127.0.0.1:3000/img1/fan/84fad3ad-b32b-4193-be69-66d5da2962b0.mp4" 
+          autoplay   controls  muted   class="v1"></video>
+         <a href="#" class="video-btn"><img src="http://127.0.0.1:3000/img1/fan/close.png" alt=""></a>
+        </div>
+
+        <script>
+        $(".d7-83").click(function(){
+            $(".d7-1").css({
+            top:"-128px",
+           left:"421px",
+           height:"146%",
+           transition:"all 0.8s"
+           }); 
+         $(".d7-bb1").addClass("bb2");
+       })   
+       
+          // 按钮
+        $(".d7-83").click(function(){
+          var $btn=$(this);
+          $btn.addClass("dd");
+           if($btn.hasClass("dd")){
+          setTimeout(function() {
+          $(".big-video").addClass("in");
+            $btn.removeClass("dd");
+          },3500);
+        }      
+    })
+                 //视频        
+         $(".video-btn").click(function(){
+          	$(this).parent().removeClass("in");
+              $(".d7-1").css({
+            top:"-128px",
+           left:"435px",
+           height:"141%",
+           transition:"all 0.8s"
+           }); 
+            $(".d7-bb1").removeClass("bb2")
+
+          }) 
+        </script>
+  </div>
+   <div class="nav">
+        <div>
+            <a href="http://127.0.0.1:3000/game.html"><img src="http://127.0.0.1:3000/img1/fan/logo_28d0be6.png" class="logo"  alt=""></a> 
+        </div>
+        <div class="navigator">
+          <a href="http://127.0.0.1:3000/role1.html"  rel="prefetch"  class="a1" data-s='.d1'></a>
+          <a href="http://127.0.0.1:3000/role2.html"   rel="prefetch" class="a2" data-s='.d2'></a>
+          <a href="http://127.0.0.1:3000/role3.html"   rel="prefetch" class="a3" data-s='.d3'></a>
+          <a href="http://127.0.0.1:3000/role4.html"  rel="prefetch"  class="a4" data-s='.d4'></a>
+          <a href="http://127.0.0.1:3000/role5.html"  rel="prefetch"  class="a5" data-s='.d5'></a>
+          <a href="http://127.0.0.1:3000/role6.html"  rel="prefetch"  class="a6" data-s='.d6'></a>
+          <a href="http://127.0.0.1:3000/role7.html"  rel="prefetch"  class="a7" data-s='.d7'></a>
+        </div>
+     </div>
+     <script>
+     
+    $('.navigator').on('click','a',function(){
+         $(this).css('background-position-x','-70px').siblings().css('background-position-x','0')
+         var aClass=$(this).attr('data-s');
+         $(aClass).show().siblings(':not(.nav)').hide();
+      })
+ 
+  
+      
+     </script>
+
+           
+</body>
+</html>
